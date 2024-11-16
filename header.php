@@ -53,7 +53,7 @@ function generate_dynamic_title() {
 
     // Извлекаем язык и путь страницы из URL
     $segments = explode('/', trim($uri, '/'));
-    $language = $segments[0] ?? 'en'; // Язык по умолчанию — 'en'
+    $language = $segments[0] ?? 'ua'; // Язык по умолчанию — 'ua'
     $page = $segments[1] ?? 'index.php'; // Страница по умолчанию — 'index.php'
 
     // Определяем заголовок
@@ -121,12 +121,12 @@ $translations = [
 
 <?php
 $uri_segments = explode('/', trim($_SERVER['REQUEST_URI'], '/'));
-$current_lang = in_array($uri_segments[0], ['ru', 'en', 'ua']) ? $uri_segments[0] : 'ru'; // 'ru' по умолчанию
+$current_lang = in_array($uri_segments[0], ['ru', 'en', 'ua']) ? $uri_segments[0] : 'ua'; // 'ua' по умолчанию
 ?>
 <header id="header">
   <div class="container">
   	<div class="header__left">
-			<a href="<?php echo home_url('/') . (($current_lang === 'ru') ? '' : $current_lang);?>">
+			<a href="<?php echo home_url('/') . (($current_lang === 'ua') ? '' : $current_lang);?>">
 				<?php $logo_img = '';
 					$custom_logo_id = get_theme_mod( 'custom_logo' );
 					if( $custom_logo_id ){
@@ -147,15 +147,15 @@ $current_lang = in_array($uri_segments[0], ['ru', 'en', 'ua']) ? $uri_segments[0
                     <ul>
 											<?php foreach ($translations[$current_lang]['services_list'] as $key => $service): ?>
 													<li>
-														<a href="<?php echo home_url('/') . (($current_lang === 'ru') ? '' : $current_lang);?>/services/<?php echo $key; ?>.html"><?php echo $service; ?>
+														<a href="<?php echo home_url('/') . (($current_lang === 'ua') ? '' : $current_lang);?>/services/<?php echo $key; ?>.html"><?php echo $service; ?>
 														</a>
 												</li>
 											<?php endforeach; ?>
 										</ul>
 								</div>
 						</li>
-						<li><a href="<?php echo home_url('/') . (($current_lang === 'ru') ? '' : $current_lang);?>/faq.html"><?php echo $translations[$current_lang]['faq']; ?></a></li>
-						<li><a href="<?php echo home_url('/') . (($current_lang === 'ru') ? '' : $current_lang);?>/contacts.html"><?php echo $translations[$current_lang]['contacts']; ?></a></li>
+						<li><a href="<?php echo home_url('/') . (($current_lang === 'ua') ? '' : $current_lang);?>/faq.html"><?php echo $translations[$current_lang]['faq']; ?></a></li>
+						<li><a href="<?php echo home_url('/') . (($current_lang === 'ua') ? '' : $current_lang);?>/contacts.html"><?php echo $translations[$current_lang]['contacts']; ?></a></li>
 				</ul>
 				</nav>
       </div>
@@ -185,7 +185,7 @@ $current_lang = in_array($uri_segments[0], ['ru', 'en', 'ua']) ? $uri_segments[0
 			</div>
 			<div class="mobile-menu">
 				<div class="mobile-menu-top">
-					<a href="<?php echo home_url('/') . (($current_lang === 'ru') ? '' : $current_lang);?>">
+					<a href="<?php echo home_url('/') . (($current_lang === 'ua') ? '' : $current_lang);?>">
 				<?php $logo_img = '';
 					$custom_logo_id = get_theme_mod( 'custom_logo' );
 					if( $custom_logo_id ){
@@ -208,17 +208,17 @@ $current_lang = in_array($uri_segments[0], ['ru', 'en', 'ua']) ? $uri_segments[0
     							<ul class="secondary-menu-list">
 										<?php foreach ($translations[$current_lang]['services_list'] as $key => $service): ?>
 											<li>
-												<a href="<?php echo home_url('/') . (($current_lang === 'ru') ? '' : $current_lang);?>/services/<?php echo $key; ?>.html"><?php echo $service; ?>
+												<a href="<?php echo home_url('/') . (($current_lang === 'ua') ? '' : $current_lang);?>/services/<?php echo $key; ?>.html"><?php echo $service; ?>
 														</a>
 											</li>
 										<?php endforeach; ?>
     							</ul>
 								</div>
 								<li>
-									<a href="<?php echo home_url('/') . (($current_lang === 'ru') ? '' : $current_lang);?>/faq.html"><?php echo $translations[$current_lang]['faq']; ?></a>
+									<a href="<?php echo home_url('/') . (($current_lang === 'ua') ? '' : $current_lang);?>/faq.html"><?php echo $translations[$current_lang]['faq']; ?></a>
 								</li>
 								<li>
-									<a href="<?php echo home_url('/') . (($current_lang === 'ru') ? '' : $current_lang);?>/contacts.html"><?php echo $translations[$current_lang]['contacts']; ?></a>
+									<a href="<?php echo home_url('/') . (($current_lang === 'ua') ? '' : $current_lang);?>/contacts.html"><?php echo $translations[$current_lang]['contacts']; ?></a>
 								</li>
 							</li>
 						</ul>

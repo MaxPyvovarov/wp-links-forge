@@ -1,6 +1,6 @@
 <?php
 /*
-	Template Name: RU front-page
+	Template Name: UA front-page
 */
 ?>
 
@@ -10,16 +10,16 @@
 			<section id="hero">
 				<div class="container relative">
 					<div class="hero__left fade-in fade-in-left">
-						 <h1><?php the_field('RU-home-hero-h1');?></h1>
+						 <h1><?php the_field('UA-home-hero-h1');?></h1>
 						<p>
-							<?php the_field('RU-home-hero-h2');?>
+							<?php the_field('UA-home-hero-h2');?>
 						</p>
 						<button data-open-modal class="btn-primary hero__left-cta">
 							Заказать ссылки
 						</button>
 					</div>
 					<div class="hero__right fade-in fade-in-right">
-						<img src="<?php the_field('RU-home-hero-img'); ?>" />
+						<img src="<?php the_field('UA-home-hero-img'); ?>" />
 					</div>
 					<img
 						class="link-bg hero__link-bg"
@@ -45,7 +45,7 @@
 			</section>
 			<section id="why-us">
 				<div class="container">	
-					<h2 class="blue fade-in"><?php the_field('RU-home-whyus-h1'); ?></h2>
+					<h2 class="blue fade-in"><?php the_field('UA-home-whyus-h1'); ?></h2>
 					<div class="why-us__benefits">
 						<div class="benefit fade-in">
 							<div class="benefit-main-content">
@@ -66,7 +66,7 @@
 									/>
 								</svg>
 								<?php
-										$block = get_field('RU-home-whyus-block1');
+										$block = get_field('UA-home-whyus-block1');
 										if( $block ): ?>
 										<h3><?php echo $block['title']; ?></h3>
 									<?php endif; ?>
@@ -75,7 +75,7 @@
 							<div class="benefit-subtext-wrapper">
 								<div class="benefit-subtext">
 									<?php
-										$block = get_field('RU-home-whyus-block1');
+										$block = get_field('UA-home-whyus-block1');
 										if( $block ): ?>
 										<p><?php echo $block['body']; ?></p>
 									<?php endif; ?>
@@ -97,7 +97,7 @@
 									/>
 								</svg>
 								<?php
-										$block = get_field('RU-home-whyus-block2');
+										$block = get_field('UA-home-whyus-block2');
 										if( $block ): ?>
 										<h3><?php echo $block['title']; ?></h3>
 									<?php endif; ?>
@@ -106,7 +106,7 @@
 							<div class="benefit-subtext-wrapper">
 								<div class="benefit-subtext">
 									<?php
-										$block = get_field('RU-home-whyus-block1');
+										$block = get_field('UA-home-whyus-block1');
 										if( $block ): ?>
 										<p><?php echo $block['body']; ?></p>
 									<?php endif; ?>
@@ -128,7 +128,7 @@
 									/>
 								</svg>
 								<?php
-										$block = get_field('RU-home-whyus-block3');
+										$block = get_field('UA-home-whyus-block3');
 										if( $block ): ?>
 										<h3><?php echo $block['title']; ?></h3>
 									<?php endif; ?>
@@ -137,7 +137,7 @@
 							<div class="benefit-subtext-wrapper">
 								<div class="benefit-subtext">
 									<?php
-										$block = get_field('RU-home-whyus-block1');
+										$block = get_field('UA-home-whyus-block1');
 										if( $block ): ?>
 										<p><?php echo $block['body']; ?></p>
 									<?php endif; ?>
@@ -165,7 +165,7 @@
 									/>
 								</svg>
 								<?php
-										$block = get_field('RU-home-whyus-block4');
+										$block = get_field('UA-home-whyus-block4');
 										if( $block ): ?>
 										<h3><?php echo $block['title']; ?></h3>
 									<?php endif; ?>
@@ -174,7 +174,7 @@
 							<div class="benefit-subtext-wrapper">
 								<div class="benefit-subtext">
 									<?php
-										$block = get_field('RU-home-whyus-block1');
+										$block = get_field('UA-home-whyus-block1');
 										if( $block ): ?>
 										<p><?php echo $block['body']; ?></p>
 									<?php endif; ?>
@@ -196,7 +196,7 @@
 									/>
 								</svg>
 								<?php
-										$block = get_field('RU-home-whyus-block5');
+										$block = get_field('UA-home-whyus-block5');
 										if( $block ): ?>
 										<h3><?php echo $block['title']; ?></h3>
 									<?php endif; ?>
@@ -205,7 +205,7 @@
 							<div class="benefit-subtext-wrapper">
 								<div class="benefit-subtext">
 									<?php
-										$block = get_field('RU-home-whyus-block1');
+										$block = get_field('UA-home-whyus-block1');
 										if( $block ): ?>
 										<p><?php echo $block['body']; ?></p>
 									<?php endif; ?>
@@ -227,7 +227,7 @@
 									/>
 								</svg>
 								<?php
-										$block = get_field('RU-home-whyus-block6');
+										$block = get_field('UA-home-whyus-block6');
 										if( $block ): ?>
 										<h3><?php echo $block['title']; ?></h3>
 									<?php endif; ?>
@@ -236,7 +236,7 @@
 							<div class="benefit-subtext-wrapper">
 								<div class="benefit-subtext">
 									<?php
-										$block = get_field('RU-home-whyus-block1');
+										$block = get_field('UA-home-whyus-block1');
 										if( $block ): ?>
 										<p><?php echo $block['body']; ?></p>
 									<?php endif; ?>
@@ -249,7 +249,7 @@
 			<section id="qualities">
 				<div class="qualities-blue">
 					<div class="container relative">
-						<h2 class="fade-in"><?php the_field('RU-home-quality-h1');?></h2>
+						<h2 class="fade-in"><?php the_field('UA-home-quality-h1');?></h2>
 						<img
 							class="qualities__link-bg link-bg"
 							src="<?php bloginfo('template_url');?>/assets/icons/link-bg.svg"
@@ -267,7 +267,7 @@
 								<img src="<?php bloginfo('template_url');?>/assets/icons/Quality1.svg" alt="High DR" />
 								<p class="quality-text">
 									<span>1.</span>
-									<?php the_field('RU-home-quality-1');?>
+									<?php the_field('UA-home-quality-1');?>
 								</p>
 							</div>
 							<div class="quality fade-in">
@@ -277,14 +277,14 @@
 								/>
 								<p class="quality-text">
 									<span>2.</span>
-									<?php the_field('RU-home-quality-2');?>
+									<?php the_field('UA-home-quality-2');?>
 								</p>
 							</div>
 							<div class="quality fade-in">
 								<img src="<?php bloginfo('template_url');?>/assets/icons/Quality3.svg" alt="Live sites" />
 								<p class="quality-text">
 									<span>3.</span>
-									<?php the_field('RU-home-quality-3');?>
+									<?php the_field('UA-home-quality-3');?>
 								</p>
 							</div>
 							<div class="quality fade-in">
@@ -294,14 +294,14 @@
 								/>
 								<p class="quality-text">
 									<span>4.</span>
-									<?php the_field('RU-home-quality-4');?>
+									<?php the_field('UA-home-quality-4');?>
 								</p>
 							</div>
 							<div class="quality fade-in">
 								<img src="<?php bloginfo('template_url');?>/assets/icons/Quality5.svg" alt="Unspamed donors" />
 								<p class="quality-text">
 									<span>5.</span>
-									<?php the_field('RU-home-quality-5');?>
+									<?php the_field('UA-home-quality-5');?>
 								</p>
 							</div>
 							<div class="quality fade-in">
@@ -311,7 +311,7 @@
 								/>
 								<p class="quality-text">
 									<span>6.</span>
-									<?php the_field('RU-home-quality-6');?>
+									<?php the_field('UA-home-quality-6');?>
 								</p>
 							</div>
 						</div>
@@ -540,7 +540,7 @@
 			</section>
 			<section id="reviews">
 				<div class="container">
-					<h2 class="blue fade-in"><?php the_field('RU-reviews-h1'); ?></h2>
+					<h2 class="blue fade-in"><?php the_field('UA-reviews-h1'); ?></h2>
 					<div class="reviews-content">
 						<img
 							class="reviews-image fade-in fade-in-left"
@@ -550,7 +550,7 @@
 						<div class="reviews-swiper fade-in fade-in-right">
 							<div class="swiper-wrapper">
 								<?php
-										$review = get_field('RU-review1');
+										$review = get_field('UA-review1');
 										if( $review ): ?>
 										<div class="swiper-slide">
 											<div class="review">
@@ -577,7 +577,7 @@
 										<?php endif; ?>
 								</div>
 								<?php
-										$review = get_field('RU-review2');
+										$review = get_field('UA-review2');
 										if( $review ): ?>
 										<div class="swiper-slide">
 											<div class="review">
@@ -604,7 +604,7 @@
 										<?php endif; ?>
 								</div>
 								<?php
-										$review = get_field('RU-review3');
+										$review = get_field('UA-review3');
 										if( $review ): ?>
 										<div class="swiper-slide">
 											<div class="review">

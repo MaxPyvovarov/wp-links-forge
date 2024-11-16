@@ -56,7 +56,7 @@ window.addEventListener('DOMContentLoaded', () => {
 		const langCode = urlPath[1]; // предполагается, что код языка - второй элемент URL
 		return ['ru', 'en', 'ua'].includes(langCode)
 			? langCode.toUpperCase()
-			: 'RU';
+			: 'UA';
 	}
 
 	// Устанавливаем язык в URL и перезагружаем страницу, если язык изменился
@@ -67,9 +67,9 @@ window.addEventListener('DOMContentLoaded', () => {
 		// Проверка на текущий язык и добавление или удаление префикса
 		if (currentLang !== language) {
 			// Если выбран русский язык, убираем префикс из URL
-			if (language === 'RU') {
+			if (language === 'UA') {
 				// Для русского языка удаляем языковой префикс из пути
-				if (currentLang === 'EN' || currentLang === 'UA') {
+				if (currentLang === 'EN' || currentLang === 'RU') {
 					currentPath.splice(1, 1); // Удаляем языковой префикс
 				}
 			} else if (!['RU', 'UA', 'EN'].includes(currentLang)) {
