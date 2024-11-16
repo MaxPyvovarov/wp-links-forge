@@ -6,117 +6,136 @@
 
 
 		<?php
-// Функция для генерации заголовка страницы
-function generate_dynamic_title() {
-    // Получаем текущий URL
-    $uri = $_SERVER['REQUEST_URI'];
+// Массивы с SEO-тайтлами для разных языков
+$seo_titles = [
+    'ru' => [
+        '' => 'SEO Услуги | Качественный Линкбилдинг и Цифровой Маркетинг | Links Forge',  // Для главной страницы
+        '404.html' => '404 Страница не найдена | Links Forge',
+        'contacts.html' => 'Свяжитесь с нами для SEO услуг | Links Forge',
+        'faq.html' => 'Часто задаваемые вопросы | SEO и Цифровой Маркетинг | Links Forge',
+        'services/crowd.html' => 'Услуга Crowd Links | Купить Качественные Crowd Links | Links Forge',
+        'services/linkbuilding.html' => 'Комплексный Линкбилдинг | Качественные SEO Ссылки | Links Forge',
+        'services/outreach.html' => 'Услуга Outreach Link Building | Получить Качественные Обратные Ссылки | Links Forge',
+        'services/reviews.html' => 'Услуга Публикации Отзывов | Повышение Онлайн Репутации | Links Forge',
+        'services/signals.html' => 'Услуга Социальных Сигналов | Улучшение SEO через Социальные Сети | Links Forge',
+        'services/submits.html' => 'Услуга Сабмитов | Эффективная Подача Ссылок для SEO | Links Forge',
+    ],
+    'en' => [
+        '' => 'SEO Services | High-Quality Link Building & Digital Marketing | Links Forge',  // Для главной страницы
+        '404.html' => '404 Page Not Found | Links Forge',
+        'contacts.html' => 'Contact Us for SEO Services | Links Forge',
+        'faq.html' => 'Frequently Asked Questions | SEO & Digital Marketing | Links Forge',
+        'services/crowd.html' => 'Crowd Links Service | Buy Quality Crowd Links | Links Forge',
+        'services/linkbuilding.html' => 'Comprehensive Link Building Services | High-Quality SEO Links | Links Forge',
+        'services/outreach.html' => 'Outreach Link Building Service | Gain Quality Backlinks | Links Forge',
+        'services/reviews.html' => 'Review Publication Service | Boost Your Online Reputation | Links Forge',
+        'services/signals.html' => 'Social Signals Service | Improve SEO with Social Media Engagement | Links Forge',
+        'services/submits.html' => 'Submit Links Service | Effective Link Submission for SEO | Links Forge',
+    ],
+    'ua' => [
+        '' => 'SEO Послуги | Якісне Лінкбілдінг та Цифровий Маркетинг | Links Forge',  // Для главной страницы
+        '404.html' => '404 Сторінка не знайдена | Links Forge',
+        'contacts.html' => 'Зв’язатися з нами для SEO послуг | Links Forge',
+        'faq.html' => 'Часті Запитання | SEO та Цифровий Маркетинг | Links Forge',
+        'services/crowd.html' => 'Послуга Crowd Links | Купити Якісні Crowd Links | Links Forge',
+        'services/linkbuilding.html' => 'Комплексний Лінкбілдінг | Якісні SEO Посилання | Links Forge',
+        'services/outreach.html' => 'Послуга Outreach Link Building | Отримати Якісні Зворотні Посилання | Links Forge',
+        'services/reviews.html' => 'Послуга Публікації Відгуків | Підвищити Вашу Онлайн Репутацію | Links Forge',
+        'services/signals.html' => 'Послуга Соціальних Сигналів | Покращення SEO через Соціальні Медіа | Links Forge',
+        'services/submits.html' => 'Послуга Сабмітів | Ефективна Подання Посилань для SEO | Links Forge',
+    ],
+];
 
-    // Массив заголовков для страниц
-    $titles = [
-        'en' => [
-            '' => 'Welcome to Our Website',
-            '404.html' => 'Page Not Found',
-            'contacts.html' => 'Contact Us',
-            'faq.html' => 'Frequently Asked Questions',
-            'services/crowd.html' => 'Crowd Links Service',
-            'services/linkbuilding.html' => 'Comprehensive Linkbuilding',
-            'services/outreach.html' => 'Outreach Links Service',
-            'services/reviews.html' => 'Reviews Publication Service',
-            'services/signals.html' => 'Social Signals Service',
-            'services/submits.html' => 'Submits Service',
-        ],
-        'ua' => [
-            '' => 'Ласкаво просимо на наш сайт',
-            '404.html' => 'Сторінку не знайдено',
-            'contacts.html' => 'Зв’язатися з нами',
-            'faq.html' => 'Часті запитання',
-            'services/crowd.html' => 'Послуга Crowd Links',
-            'services/linkbuilding.html' => 'Комплексний лінкбілдинг',
-            'services/outreach.html' => 'Послуга Outreach Links',
-            'services/reviews.html' => 'Послуга публікації відгуків',
-            'services/signals.html' => 'Послуга соціальних сигналів',
-            'services/submits.html' => 'Послуга сабмітів',
-        ],
-        'ru' => [
-            '' => 'Добро пожаловать на наш сайт',
-            '404.html' => 'Страница не найдена',
-            'contacts.html' => 'Свяжитесь с нами',
-            'faq.html' => 'Часто задаваемые вопросы',
-            'services/crowd.html' => 'Услуга Crowd Links',
-            'services/linkbuilding.html' => 'Комплексный линкбилдинг',
-            'services/outreach.html' => 'Услуга Outreach Links',
-            'services/reviews.html' => 'Услуга публикации отзывов',
-            'services/signals.html' => 'Услуга социальных сигналов',
-            'services/submits.html' => 'Услуга сабмитов',
-        ],
-    ];
-
-    // Извлекаем язык и путь страницы из URL
-    $segments = explode('/', trim($uri, '/'));
-    $language = $segments[0] ?? 'ua'; // Язык по умолчанию — 'ua'
-    $page = $segments[1] ?? 'index.php'; // Страница по умолчанию — 'index.php'
-
-    // Определяем заголовок
-    if (isset($titles[$language][$page])) {
-        return $titles[$language][$page];
-    } else {
-        return 'Default Title'; // Заголовок по умолчанию
+function get_current_language() {
+    $path = trim($_SERVER['REQUEST_URI'], '/');
+    if (preg_match('/^en(\/|$)/', $path)) {
+        return 'en';
+    } elseif (preg_match('/^ru(\/|$)/', $path)) {
+        return 'ru';
     }
+    return 'ua'; // По умолчанию украинский
 }
 
-// Выводим заголовок
+
+// Функция для генерации тайтла
+function get_dynamic_title($current_page, $seo_titles) {
+    $language = get_current_language();
+		
+    // Главная страница
+    if ($current_page == '' || $current_page == 'index.php') {
+			$current_page = '';
+    }
+		
+    // Проверяем, есть ли ключ в массиве
+    if (isset($seo_titles[$language][$current_page])) {
+			return $seo_titles[$language][$current_page];
+    }
+    return 'SEO Услуги | Links Forge';
+}
+
+// Получаем текущий путь
+$current_page = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH); // Только путь
+$current_page = ltrim($current_page, '/'); // Удаляем начальный слеш
+
+$path_parts = explode('/', $current_page, 2); // Разбиваем строку на максимум 2 части
+if (in_array($path_parts[0], ['en', 'ru', 'ua'])) {
+    $current_page = $path_parts[1] ?? ''; // Если есть 2-я часть, используем её; иначе пустая строка
+}
+
+$title = get_dynamic_title($current_page, $seo_titles);
+
+echo "<title>" . htmlspecialchars($title) . "</title>";
 ?>
-<title><?php echo generate_dynamic_title(); ?></title>
 
 	<?php wp_head();?>
 
 	</head>
 	<body>
 		<?php
-$translations = [
-    'ru' => [
-        'services' => 'Услуги',
-        'faq' => 'F.A.Q',
-        'contacts' => 'Контакты',
-        'contact_us' => 'Связаться',
-        'services_list' => [
-            'crowd' => 'Крауд ссылки',
-            'outreach' => 'Аутрич ссылки',
-            'submits' => 'Сабмиты',
-            'signals' => 'Соц. сигналы',
-            'reviews' => 'Публикация отзывов',
-            'linkbuilding' => 'Линкбилдинг под ключ',
-        ],
-    ],
-    'en' => [
-        'services' => 'Services',
-        'faq' => 'F.A.Q',
-        'contacts' => 'Contacts',
-        'contact_us' => 'Contact us',
-        'services_list' => [
-            'crowd' => 'Crowd links',
-            'outreach' => 'Outreach links',
-            'submits' => 'Submits',
-            'signals' => 'Social signals',
-            'reviews' => 'Review publications',
-            'linkbuilding' => 'Turnkey linkbuilding',
-        ],
-    ],
-    'ua' => [
-        'services' => 'Послуги',
-        'faq' => 'F.A.Q',
-        'contacts' => 'Контакти',
-        'contact_us' => 'Зв\'язатися',
-        'services_list' => [
-            'crowd' => 'Крауд посилання',
-            'outreach' => 'Аутріч посилання',
-            'submits' => 'Сабміти',
-            'signals' => 'Соц. сигнали',
-            'reviews' => 'Публікація відгуків',
-            'linkbuilding' => 'Лінкбілдінг під ключ',
-        ],
-    ],
-];
+			$translations = [
+				'ru' => [
+						'services' => 'Услуги',
+						'faq' => 'F.A.Q',
+						'contacts' => 'Контакты',
+						'contact_us' => 'Связаться',
+						'services_list' => [
+								'crowd' => 'Крауд ссылки',
+								'outreach' => 'Аутрич ссылки',
+								'submits' => 'Сабмиты',
+								'signals' => 'Соц. сигналы',
+								'reviews' => 'Публикация отзывов',
+								'linkbuilding' => 'Линкбилдинг под ключ',
+						],
+				],
+				'en' => [
+						'services' => 'Services',
+						'faq' => 'F.A.Q',
+						'contacts' => 'Contacts',
+						'contact_us' => 'Contact us',
+						'services_list' => [
+								'crowd' => 'Crowd links',
+								'outreach' => 'Outreach links',
+								'submits' => 'Submits',
+								'signals' => 'Social signals',
+								'reviews' => 'Review publications',
+								'linkbuilding' => 'Turnkey linkbuilding',
+						],
+				],
+				'ua' => [
+						'services' => 'Послуги',
+						'faq' => 'F.A.Q',
+						'contacts' => 'Контакти',
+						'contact_us' => 'Зв\'язатися',
+						'services_list' => [
+								'crowd' => 'Крауд посилання',
+								'outreach' => 'Аутріч посилання',
+								'submits' => 'Сабміти',
+								'signals' => 'Соц. сигнали',
+								'reviews' => 'Публікація відгуків',
+								'linkbuilding' => 'Лінкбілдінг під ключ',
+						],
+				],
+			];
 ?>
 
 <?php
