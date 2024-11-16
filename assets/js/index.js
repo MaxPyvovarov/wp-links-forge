@@ -56,18 +56,33 @@ window.addEventListener('DOMContentLoaded', () => {
 		const langCode = urlPath[1]; // предполагается, что код языка - второй элемент URL
 		return ['ru', 'en', 'ua'].includes(langCode)
 			? langCode.toUpperCase()
-			: 'UA';
+			: 'RU';
 	}
 
 	// Устанавливаем язык в URL и перезагружаем страницу, если язык изменился
 	function setLanguageInURL(language) {
 		const currentPath = window.location.pathname.split('/');
-		const currentLang = currentPath[1].toUpperCase();
+		const currentLang = currentPath[1]?.toUpperCase();
+
+		// Проверка на текущий язык и добавление или удаление префикса
 		if (currentLang !== language) {
-			// Проверка, изменился ли язык
-			currentPath[1] = language.toLowerCase(); // Обновляем язык в пути
+			// Если выбран русский язык, убираем префикс из URL
+			if (language === 'RU') {
+				// Для русского языка удаляем языковой префикс из пути
+				if (currentLang === 'EN' || currentLang === 'UA') {
+					currentPath.splice(1, 1); // Удаляем языковой префикс
+				}
+			} else if (!['RU', 'UA', 'EN'].includes(currentLang)) {
+				// Для услуг обновляем язык перед /services
+				currentPath[0] = language.toLowerCase();
+			} else {
+				currentPath.splice(0, 1); // Удаляем языковой префикс
+				// Для других языков, добавляем их в начало пути
+				currentPath[0] = language.toLowerCase();
+			}
+
 			const newPath = currentPath.join('/');
-			window.location.href = newPath; // Переходим на новый URL, вызывая перезагрузку страницы
+			window.location.pathname = newPath; // Переходим на новый путь
 		}
 	}
 
@@ -91,7 +106,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	// Устанавливаем начальный язык на основе URL
 	selectedLangElement.innerHTML = `${defaultLang}`;
-	resetDesktopLanguages(defaultLang);
+	resetDesktopLanguages();
 	resetMobileLanguages(defaultLang);
 
 	// Обработчик для десктопного меню
@@ -104,15 +119,15 @@ window.addEventListener('DOMContentLoaded', () => {
 	function updateLanguages(selected) {
 		selectedLangElement.innerHTML = selected;
 		setLanguageInURL(selected); // Перенаправляем на новый URL, если язык изменился
-		resetDesktopLanguages(selected);
+		resetDesktopLanguages();
 		resetMobileLanguages(selected);
 	}
 
 	// Обновляем десктопное меню
-	function resetDesktopLanguages(selected) {
+	function resetDesktopLanguages() {
 		langList = [];
 		allLanguageElements.forEach(lang => {
-			if (lang.innerHTML !== selected) langList.push(lang.innerHTML);
+			langList.push(lang.innerHTML);
 		});
 
 		ulList.innerHTML = '';

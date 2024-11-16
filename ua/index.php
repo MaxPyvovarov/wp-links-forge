@@ -10,23 +10,16 @@
 			<section id="hero">
 				<div class="container relative">
 					<div class="hero__left fade-in fade-in-left">
-						 <h1><?php the_field('UA-hero-h1');?></h1>
+						 <h1><?php the_field('UA-home-hero-h1');?></h1>
 						<p>
-							У нас вы можете заказать качественные ссылки для продвижения сайта
-							в поиске. Мы подберем вам лучших доноров для аутрича или разместим
-							крауд с гарантией. Купить ссылки в любой тематике и ГЕО можно у
-							нас
+							<?php the_field('UA-home-hero-h2');?>
 						</p>
 						<button data-open-modal class="btn-primary hero__left-cta">
 							Заказать ссылки
 						</button>
 					</div>
 					<div class="hero__right fade-in fade-in-right">
-						<img
-							class="hero__img"
-							src="<?php bloginfo('template_url');?>/assets/images/home/hero-img.svg"
-							alt="hero image"
-						/>
+						<img src="<?php the_field('UA-home-hero-img'); ?>" />
 					</div>
 					<img
 						class="link-bg hero__link-bg"
@@ -51,8 +44,8 @@
 				</div>
 			</section>
 			<section id="why-us">
-				<div class="container">
-					<h2 class="blue fade-in">Почему Links Forge?</h2>
+				<div class="container">	
+					<h2 class="blue fade-in"><?php the_field('UA-home-whyus-h1'); ?></h2>
 					<div class="why-us__benefits">
 						<div class="benefit fade-in">
 							<div class="benefit-main-content">
@@ -72,15 +65,20 @@
 										fill="#010948"
 									/>
 								</svg>
-								<h3>Бесплатная консультация</h3>
+								<?php
+										$block = get_field('UA-home-whyus-block1');
+										if( $block ): ?>
+										<h3><?php echo $block['title']; ?></h3>
+									<?php endif; ?>
 								<img src="<?php bloginfo('template_url');?>/assets/icons/arrow-down.svg" alt="show more" />
 							</div>
 							<div class="benefit-subtext-wrapper">
 								<div class="benefit-subtext">
-									<p>
-										Мы консультируем и оказываем поддержку наших клиентов в
-										любое удобное для вас время
-									</p>
+									<?php
+										$block = get_field('UA-home-whyus-block1');
+										if( $block ): ?>
+										<p><?php echo $block['body']; ?></p>
+									<?php endif; ?>
 								</div>
 							</div>
 						</div>
@@ -98,14 +96,20 @@
 										fill="#010948"
 									/>
 								</svg>
-
-								<h3>Работаем с любыми тематиками и ГЕО</h3>
-
+								<?php
+										$block = get_field('UA-home-whyus-block2');
+										if( $block ): ?>
+										<h3><?php echo $block['title']; ?></h3>
+									<?php endif; ?>
 								<img src="<?php bloginfo('template_url');?>/assets/icons/arrow-down.svg" alt="show more" />
 							</div>
 							<div class="benefit-subtext-wrapper">
 								<div class="benefit-subtext">
-									<p>Мы подберем вам лучших доноров по вашей тематике и ГЕО</p>
+									<?php
+										$block = get_field('UA-home-whyus-block1');
+										if( $block ): ?>
+										<p><?php echo $block['body']; ?></p>
+									<?php endif; ?>
 								</div>
 							</div>
 						</div>
@@ -123,12 +127,20 @@
 										fill="#010948"
 									/>
 								</svg>
-								<h3>Размещаем ссылки в установленный вами срок</h3>
+								<?php
+										$block = get_field('UA-home-whyus-block3');
+										if( $block ): ?>
+										<h3><?php echo $block['title']; ?></h3>
+									<?php endif; ?>
 								<img src="<?php bloginfo('template_url');?>/assets/icons/arrow-down.svg" alt="show more" />
 							</div>
 							<div class="benefit-subtext-wrapper">
 								<div class="benefit-subtext">
-									<p>Дедлайн устанавливает клиент - мы размещаем в срок</p>
+									<?php
+										$block = get_field('UA-home-whyus-block1');
+										if( $block ): ?>
+										<p><?php echo $block['body']; ?></p>
+									<?php endif; ?>
 								</div>
 							</div>
 						</div>
@@ -152,15 +164,20 @@
 										fill="#010948"
 									/>
 								</svg>
-								<h3>Скидки для постоянных клиентов</h3>
+								<?php
+										$block = get_field('UA-home-whyus-block4');
+										if( $block ): ?>
+										<h3><?php echo $block['title']; ?></h3>
+									<?php endif; ?>
 								<img src="<?php bloginfo('template_url');?>/assets/icons/arrow-down.svg" alt="show more" />
 							</div>
 							<div class="benefit-subtext-wrapper">
 								<div class="benefit-subtext">
-									<p>
-										Мы предоставляем скидки для постоянных клиентов до 30% от
-										общей суммы заказа
-									</p>
+									<?php
+										$block = get_field('UA-home-whyus-block1');
+										if( $block ): ?>
+										<p><?php echo $block['body']; ?></p>
+									<?php endif; ?>
 								</div>
 							</div>
 						</div>
@@ -178,15 +195,20 @@
 										fill="#010948"
 									/>
 								</svg>
-								<h3>Без комиссий и доплат</h3>
+								<?php
+										$block = get_field('UA-home-whyus-block5');
+										if( $block ): ?>
+										<h3><?php echo $block['title']; ?></h3>
+									<?php endif; ?>
 								<img src="<?php bloginfo('template_url');?>/assets/icons/arrow-down.svg" alt="show more" />
 							</div>
 							<div class="benefit-subtext-wrapper">
 								<div class="benefit-subtext">
-									<p>
-										У нас фиксированные цены на ссылки, мы никогда не попросим у
-										вас доплаты
-									</p>
+									<?php
+										$block = get_field('UA-home-whyus-block1');
+										if( $block ): ?>
+										<p><?php echo $block['body']; ?></p>
+									<?php endif; ?>
 								</div>
 							</div>
 						</div>
@@ -204,15 +226,20 @@
 										fill="#010948"
 									/>
 								</svg>
-								<h3> Гарантия на ссылки</h3>
+								<?php
+										$block = get_field('UA-home-whyus-block6');
+										if( $block ): ?>
+										<h3><?php echo $block['title']; ?></h3>
+									<?php endif; ?>
 								<img src="<?php bloginfo('template_url');?>/assets/icons/arrow-down.svg" alt="show more" />
 							</div>
 							<div class="benefit-subtext-wrapper">
 								<div class="benefit-subtext">
-									<p>
-										Мы предоставляем гарантию на то, что ваши ссылку не удалят в
-										течении оговоренного срока
-									</p>
+									<?php
+										$block = get_field('UA-home-whyus-block1');
+										if( $block ): ?>
+										<p><?php echo $block['body']; ?></p>
+									<?php endif; ?>
 								</div>
 							</div>
 						</div>
@@ -222,7 +249,7 @@
 			<section id="qualities">
 				<div class="qualities-blue">
 					<div class="container relative">
-						<h2 class="fade-in">Наши ссылки - это стандарт качества</h2>
+						<h2 class="fade-in"><?php the_field('UA-home-quality-h1');?></h2>
 						<img
 							class="qualities__link-bg link-bg"
 							src="<?php bloginfo('template_url');?>/assets/icons/link-bg.svg"
@@ -240,7 +267,7 @@
 								<img src="<?php bloginfo('template_url');?>/assets/icons/Quality1.svg" alt="High DR" />
 								<p class="quality-text">
 									<span>1.</span>
-									Высокий DR доноров (20+)
+									<?php the_field('UA-home-quality-1');?>
 								</p>
 							</div>
 							<div class="quality fade-in">
@@ -250,14 +277,14 @@
 								/>
 								<p class="quality-text">
 									<span>2.</span>
-									Хорошая индексируемость ссылок
+									<?php the_field('UA-home-quality-2');?>
 								</p>
 							</div>
 							<div class="quality fade-in">
 								<img src="<?php bloginfo('template_url');?>/assets/icons/Quality3.svg" alt="Live sites" />
 								<p class="quality-text">
 									<span>3.</span>
-									Живые сайты с трафиком
+									<?php the_field('UA-home-quality-3');?>
 								</p>
 							</div>
 							<div class="quality fade-in">
@@ -267,14 +294,14 @@
 								/>
 								<p class="quality-text">
 									<span>4.</span>
-									Большая база сайтов
+									<?php the_field('UA-home-quality-4');?>
 								</p>
 							</div>
 							<div class="quality fade-in">
 								<img src="<?php bloginfo('template_url');?>/assets/icons/Quality5.svg" alt="Unspamed donors" />
 								<p class="quality-text">
 									<span>5.</span>
-									Незаспамленные доноры
+									<?php the_field('UA-home-quality-5');?>
 								</p>
 							</div>
 							<div class="quality fade-in">
@@ -284,7 +311,7 @@
 								/>
 								<p class="quality-text">
 									<span>6.</span>
-									Уникальность и естественность текстов
+									<?php the_field('UA-home-quality-6');?>
 								</p>
 							</div>
 						</div>
@@ -307,7 +334,7 @@
 			</section>
 			<section id="clients">
 				<div class="container">
-					<h2 class="blue fade-in">Наши клиенты</h2>
+					<h2 class="blue fade-in">Наші клієнти</h2>
 					<div class="clients-swiper fade-in">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
@@ -402,7 +429,7 @@
 			</section>
 			<section id="countries" class="index-countries">
 				<div class="container relative">
-					<h2 class="fade-in">Линкбилдинг в 10+ странах</h2>
+					<h2 class="fade-in">Лінкбілдинг у 10+ країнах</h2>
 					<div class="countries-list">
 						<div class="countries-item">
 							<div class="country uk fade-in fade-in-top">
@@ -410,7 +437,7 @@
 									src="<?php bloginfo('template_url');?>/assets/images/countries/UK.png"
 									alt="United Kingdom"
 								/>
-								<span>Великобритания</span>
+								<span>Велика Британія</span>
 							</div>
 						</div>
 						<div class="countries-item">
@@ -423,13 +450,13 @@
 							</div>
 							<div class="country fade-in fade-in-right">
 								<img src="<?php bloginfo('template_url');?>/assets/images/countries/UA.png" alt="Ukraine" />
-								<span>Украина</span>
+								<span>Україна</span>
 							</div>
 						</div>
 						<div class="countries-item fade-in fade-in-left">
 							<div class="country">
 								<img src="<?php bloginfo('template_url');?>/assets/images/countries/FR.png" alt="France" />
-								<span>Франция</span>
+								<span>Франція</span>
 							</div>
 							<div class="country fade-in fade-in-right">
 								<img src="<?php bloginfo('template_url');?>/assets/images/countries/KZ.png" alt="Kazakhstan" />
@@ -439,7 +466,7 @@
 						<div class="countries-item fade-in fade-in-left">
 							<div class="country">
 								<img src="<?php bloginfo('template_url');?>/assets/images/countries/ES.png" alt="Spain" />
-								<span>Испания</span>
+								<span>Іспанія</span>
 							</div>
 							<div class="country fade-in fade-in-right">
 								<img src="<?php bloginfo('template_url');?>/assets/images/countries/MX.png" alt="Mexico" />
@@ -449,7 +476,7 @@
 						<div class="countries-item fade-in fade-in-left">
 							<div class="country">
 								<img src="<?php bloginfo('template_url');?>/assets/images/countries/DE.png" alt="Germany" />
-								<span>Германия</span>
+								<span>Німеччина</span>
 							</div>
 							<div class="country fade-in fade-in-right">
 								<img src="<?php bloginfo('template_url');?>/assets/images/countries/AR.png" alt="Argentina" />
@@ -459,11 +486,11 @@
 						<div class="countries-item fade-in">
 							<div class="country">
 								<img src="<?php bloginfo('template_url');?>/assets/images/countries/PL.png" alt="Poland" />
-								<span>Польша</span>
+								<span>Польща</span>
 							</div>
 							<div class="country fade-in">
 								<img src="<?php bloginfo('template_url');?>/assets/images/countries/CL.png" alt="Chile" />
-								<span>Чили</span>
+								<span>Чілі</span>
 							</div>
 						</div>
 						<svg
@@ -513,7 +540,7 @@
 			</section>
 			<section id="reviews">
 				<div class="container">
-					<h2 class="blue fade-in">Что говорят о нас наши клиенты?</h2>
+					<h2 class="blue fade-in"><?php the_field('UA-reviews-h1'); ?></h2>
 					<div class="reviews-content">
 						<img
 							class="reviews-image fade-in fade-in-left"
@@ -522,87 +549,86 @@
 						/>
 						<div class="reviews-swiper fade-in fade-in-right">
 							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<div class="review">
-										<img
-											src="<?php bloginfo('template_url');?>/assets/icons/quotes.svg"
-											alt="quote"
-											class="quote"
-										/>
-										<div class="reviewer-info">
-											<h5>Ricardo Gerlach DVM</h5>
-											<span>SEO Team Lead</span>
-											<div class="review-mark">
-												<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
-												<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
-												<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
-												<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
-												<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+								<?php
+										$review = get_field('UA-review1');
+										if( $review ): ?>
+										<div class="swiper-slide">
+											<div class="review">
+											<img
+												src="<?php bloginfo('template_url');?>/assets/icons/quotes.svg"
+												alt="quote"
+												class="quote"
+											/>
+											<div class="reviewer-info">
+												<h5><?php echo $review['name']; ?></h5>
+												<span><?php echo $review['position']; ?></span>
+												<div class="review-mark">
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+												</div>
 											</div>
-										</div>
-										<p class="review-text">
-											Officia dolore rerum in ut quo voluptatibus ea dicta.
-											Illum voluptates cum sint est cum corrupti ut tempore
-											ratione. voluptatibus ea dicta. Illum voluptates cum sint
-											est cum corrupti ut tempore ratione.
-										</p>
+											<p class="review-text">
+												<?php echo $review['text']; ?>
+											</p>
 									</div>
+										<?php endif; ?>
 								</div>
-								<div class="swiper-slide">
-									<div class="review">
-										<img
-											src="<?php bloginfo('template_url');?>/assets/icons/quotes.svg"
-											alt="quote"
-											class="quote"
-										/>
-										<div class="reviewer-info">
-											<h5>Ricardo Gerlach DVM</h5>
-											<span>SEO Team Lead</span>
-											<div class="review-mark">
-												<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
-												<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
-												<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
-												<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
-												<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+								<?php
+										$review = get_field('UA-review2');
+										if( $review ): ?>
+										<div class="swiper-slide">
+											<div class="review">
+											<img
+												src="<?php bloginfo('template_url');?>/assets/icons/quotes.svg"
+												alt="quote"
+												class="quote"
+											/>
+											<div class="reviewer-info">
+												<h5><?php echo $review['name']; ?></h5>
+												<span><?php echo $review['position']; ?></span>
+												<div class="review-mark">
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+												</div>
 											</div>
-										</div>
-										<p class="review-text">
-											Consequatur error ullam numquam aut aut ipsum. Commodi
-											repellendus consequatur. Dolores ut eos sed voluptate
-											suscipit. Fugit aut pariatur quia. Maiores velit eveniet.
-											Et neque a veritatis esse voluptatem quaerat eum ullam ea.
-										</p>
+											<p class="review-text">
+												<?php echo $review['text']; ?>
+											</p>
 									</div>
+										<?php endif; ?>
 								</div>
-								<div class="swiper-slide">
-									<div class="review">
-										<img
-											src="<?php bloginfo('template_url');?>/assets/icons/quotes.svg"
-											alt="quote"
-											class="quote"
-										/>
-										<div class="reviewer-info">
-											<h5>Ricardo Gerlach DVM</h5>
-											<span>SEO Team Lead</span>
-											<div class="review-mark">
-												<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
-												<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
-												<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
-												<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
-												<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+								<?php
+										$review = get_field('UA-review3');
+										if( $review ): ?>
+										<div class="swiper-slide">
+											<div class="review">
+											<img
+												src="<?php bloginfo('template_url');?>/assets/icons/quotes.svg"
+												alt="quote"
+												class="quote"
+											/>
+											<div class="reviewer-info">
+												<h5><?php echo $review['name']; ?></h5>
+												<span><?php echo $review['position']; ?></span>
+												<div class="review-mark">
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+												</div>
 											</div>
-										</div>
-										<p class="review-text">
-											Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-											Amet minima voluptas quis excepturi itaque et quidem, quam
-											consequuntur architecto ullam, dicta error, nesciunt
-											eligendi atque? Id rem vero perferendis earum! Lorem ipsum
-											dolor, sit amet consectetur adipisicing elit. Cumque porro
-											officia odit quaerat nulla repellendus veniam placeat
-											facere, debitis ipsam saepe a, fuga soluta vero repellat
-											cupiditate iste mollitia! Eaque!
-										</p>
+											<p class="review-text">
+												<?php echo $review['text']; ?>
+											</p>
 									</div>
+										<?php endif; ?>
 								</div>
 							</div>
 							<div class="swiper-pagination"></div>
