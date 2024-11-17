@@ -396,6 +396,7 @@ section {
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
+	width: 100%;
 }
 
 .options-block p {
@@ -409,12 +410,13 @@ section {
 	background-repeat: no-repeat;
 	position: absolute;
 	left: 0;
-	top: 3pxs;
+	top: 3px;
 	width: 20px;
 	height: 20px;
 }
 
 .offer-label {
+	font-size: 14px;
 	position: absolute;
 	color: #000f31;
 	font-weight: 700;

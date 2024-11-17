@@ -75,14 +75,14 @@ $current_lang = in_array($uri_segments[0], ['ru', 'en', 'ua']) ? $uri_segments[0
 						<h4><?php echo $translations[$current_lang]['services']; ?></h4>
 						<div class="footer-services-list">
 							<?php foreach ($translations[$current_lang]['services_list'] as $key => $service): ?>
-									<a href="<?php echo home_url('/') . (($current_lang === 'ua') ? '' : $current_lang . '/');?>services/<?php echo $key; ?>.html"><?php echo $service; ?>
+									<a href="<?php echo home_url('/') . (($current_lang === 'ua') ? '' : $current_lang . '/');?>services/<?php echo $key; ?>"><?php echo $service; ?>
 									</a>
 							<?php endforeach; ?>
 						</div>
 					</div>
 					<div class="footer-pages">
-						<a href="<?php echo home_url('/') . (($current_lang === 'ua') ? '' : $current_lang . '/');?>faq.html"><?php echo $translations[$current_lang]['faq']; ?></a>
-						<a href="<?php echo home_url('/') . (($current_lang === 'ua') ? '' : $current_lang . '/');?>contacts.html"><?php echo $translations[$current_lang]['contacts']; ?></a>
+						<a href="<?php echo home_url('/') . (($current_lang === 'ua') ? '' : $current_lang . '/');?>faq"><?php echo $translations[$current_lang]['faq']; ?></a>
+						<a href="<?php echo home_url('/') . (($current_lang === 'ua') ? '' : $current_lang . '/');?>contacts"><?php echo $translations[$current_lang]['contacts']; ?></a>
 					</div>
 					<div class="footer-contacts">
 						<h4><?php echo $translations[$current_lang]['contacts']; ?></h4>
