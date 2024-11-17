@@ -166,15 +166,15 @@ $current_lang = in_array($uri_segments[0], ['ru', 'en', 'ua']) ? $uri_segments[0
                     <ul>
 											<?php foreach ($translations[$current_lang]['services_list'] as $key => $service): ?>
 													<li>
-														<a href="<?php echo home_url('/') . (($current_lang === 'ua') ? '' : $current_lang);?>/services/<?php echo $key; ?>.html"><?php echo $service; ?>
+														<a href="<?php echo home_url('/') . (($current_lang === 'ua') ? '' : $current_lang. '/');?>services/<?php echo $key; ?>.html"><?php echo $service; ?>
 														</a>
 												</li>
 											<?php endforeach; ?>
 										</ul>
 								</div>
 						</li>
-						<li><a href="<?php echo home_url('/') . (($current_lang === 'ua') ? '' : $current_lang);?>/faq.html"><?php echo $translations[$current_lang]['faq']; ?></a></li>
-						<li><a href="<?php echo home_url('/') . (($current_lang === 'ua') ? '' : $current_lang);?>/contacts.html"><?php echo $translations[$current_lang]['contacts']; ?></a></li>
+						<li><a href="<?php echo home_url('/') . (($current_lang === 'ua') ? '' : $current_lang . '/');?>faq.html"><?php echo $translations[$current_lang]['faq']; ?></a></li>
+						<li><a href="<?php echo home_url('/') . (($current_lang === 'ua') ? '' : $current_lang . '/');?>contacts.html"><?php echo $translations[$current_lang]['contacts']; ?></a></li>
 				</ul>
 				</nav>
       </div>

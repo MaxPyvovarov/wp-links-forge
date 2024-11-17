@@ -1,3 +1,70 @@
+		<?php
+		$contact_info = [
+			'phone' => [
+					'first' => '+1234567890',  // Первый номер телефона
+					'second' => '+0987654321', // Второй номер телефона
+			],
+			'email' => [
+					'first' => 'example1@example.com',  // Первый имейл
+					'second' => 'example2@example.com', // Второй имейл
+			],
+			'telegram' => 'https://t.me/example_telegram', // Телеграм ссылка
+			'discord' => 'https://discord.com/users/Example#1234', // Дискорд ссылка
+			'viber' => 'tel:+1234567890',  // Вайбер ссылка (можно использовать как ссылку на звонок)
+			'skype' => 'skype:example_skype_id?call', // Скайп ссылка для звонка
+			'whatsapp' => 'https://wa.me/1234567890', // Вотсапп ссылка
+		];
+
+			$translations = [
+				'ru' => [
+						'services' => 'Услуги',
+						'faq' => 'F.A.Q',
+						'contacts' => 'Контакты',
+						'contact_us' => 'Связаться',
+						'services_list' => [
+								'crowd' => 'Крауд ссылки',
+								'outreach' => 'Аутрич ссылки',
+								'submits' => 'Сабмиты',
+								'signals' => 'Соц. сигналы',
+								'reviews' => 'Публикация отзывов',
+								'linkbuilding' => 'Линкбилдинг под ключ',
+						],
+				],
+				'en' => [
+						'services' => 'Services',
+						'faq' => 'F.A.Q',
+						'contacts' => 'Contacts',
+						'contact_us' => 'Contact us',
+						'services_list' => [
+								'crowd' => 'Crowd links',
+								'outreach' => 'Outreach links',
+								'submits' => 'Submits',
+								'signals' => 'Social signals',
+								'reviews' => 'Review publications',
+								'linkbuilding' => 'Turnkey linkbuilding',
+						],
+				],
+				'ua' => [
+						'services' => 'Послуги',
+						'faq' => 'F.A.Q',
+						'contacts' => 'Контакти',
+						'contact_us' => 'Зв\'язатися',
+						'services_list' => [
+								'crowd' => 'Крауд посилання',
+								'outreach' => 'Аутріч посилання',
+								'submits' => 'Сабміти',
+								'signals' => 'Соц. сигнали',
+								'reviews' => 'Публікація відгуків',
+								'linkbuilding' => 'Лінкбілдінг під ключ',
+						],
+				],
+			];
+
+		
+$uri_segments = explode('/', trim($_SERVER['REQUEST_URI'], '/'));	
+$current_lang = in_array($uri_segments[0], ['ru', 'en', 'ua']) ? $uri_segments[0] : 'ua'; // 'ua' по умолчанию
+?>
+		
 		<footer id="footer">
 			<div class="container relative">
 				<div class="footer-content">
@@ -5,30 +72,28 @@
 						><img src="<?php bloginfo('template_url');?>/assets/icons/logo_white.svg" alt="logo" class="logo"
 					/></a>
 					<div class="footer-services">
-						<h4>Услуги</h4>
+						<h4><?php echo $translations[$current_lang]['services']; ?></h4>
 						<div class="footer-services-list">
-							<a href="./services/crowd.html">Крауд ссылки</a>
-							<a href="./services/outreach.html">Аутрич ссылки</a>
-							<a href="./services/submits.html">Сабмиты</a>
-							<a href="./services/signals.html">Соц. сигналы</a>
-							<a href="./services/linkbuilding.html">Линкбилдинг под ключ </a>
+							<?php foreach ($translations[$current_lang]['services_list'] as $key => $service): ?>
+									<a href="<?php echo home_url('/') . (($current_lang === 'ua') ? '' : $current_lang . '/');?>services/<?php echo $key; ?>.html"><?php echo $service; ?>
+									</a>
+							<?php endforeach; ?>
 						</div>
 					</div>
 					<div class="footer-pages">
-						<a href="#">Про нас</a>
-						<a href="./faq.html">F.A.Q.</a>
-						<a href="./contacts.html">Контакты</a>
+						<a href="<?php echo home_url('/') . (($current_lang === 'ua') ? '' : $current_lang . '/');?>faq.html"><?php echo $translations[$current_lang]['faq']; ?></a>
+						<a href="<?php echo home_url('/') . (($current_lang === 'ua') ? '' : $current_lang . '/');?>contacts.html"><?php echo $translations[$current_lang]['contacts']; ?></a>
 					</div>
 					<div class="footer-contacts">
-						<h4>Контакты</h4>
+						<h4><?php echo $translations[$current_lang]['contacts']; ?></h4>
 						<div class="footer-contacts-list">
 							<div class="footer-contacts-item">
 								<div>
 									<img src="<?php bloginfo('template_url');?>/assets/icons/phone.svg" alt="phone" />
 								</div>
 								<div class="footer-links">
-									<a href="tel:<?php the_field('phone-1');?>"><?php the_field('phone-1');?></a>
-									<a href="tel:<?php the_field('phone-2');?>"><?php the_field('phone-2');?></a>
+									<a href="tel:<?php echo $contact_info['phone']['first'];?>"><?php echo $contact_info['phone']['first'];?></a>
+									<a href="tel:<?php echo $contact_info['phone']['second'];?>"><?php echo $contact_info['phone']['second'];?></a>
 								</div>
 							</div>
 							<div class="footer-contacts-item">
@@ -36,18 +101,18 @@
 									<img src="<?php bloginfo('template_url');?>/assets/icons/mail.svg" alt="mail" />
 								</div>
 								<div class="footer-links">
-									<a href="mailto:<?php the_field('email-1');?>"
-										><?php the_field('email-1');?></a
+									<a href="mailto:<?php echo $contact_info['email']['first'];?>"
+										><?php echo $contact_info['email']['first'];?></a
 									>
-									<a href="mailto:<?php the_field('email-2');?>"
-										><?php the_field('email-2');?></a
+									<a href="mailto:<?php echo $contact_info['email']['second'];?>"
+										><?php echo $contact_info['email']['second'];?></a
 									>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="footer-socials">
-						<a href="<?php the_field('skype');?>">
+						<a href="<?php echo $contact_info['skype'];?>">
 							<div class="footer-socials-item">
 								<svg
 									width="20"
@@ -63,7 +128,7 @@
 								</svg>
 							</div>
 						</a>
-						<a href="<?php the_field('whatsapp');?>">
+						<a href="<?php echo $contact_info['whatsapp'];?>">
 							<div class="footer-socials-item">
 								<svg
 									width="20"
@@ -79,7 +144,7 @@
 								</svg>
 							</div>
 						</a>
-						<a href="<?php the_field('telegram');?>">
+						<a href="<?php echo $contact_info['telegram'];?>">
 							<div class="footer-socials-item">
 								<svg
 									width="20"
@@ -95,7 +160,7 @@
 								</svg>
 							</div>
 						</a>
-						<a href="<?php the_field('discord');?>">
+						<a href="<?php echo $contact_info['discord'];?>">
 							<div class="footer-socials-item">
 								<svg
 									width="20"
@@ -111,7 +176,7 @@
 								</svg>
 							</div>
 						</a>
-						<a href="<?php the_field('viber');?>">
+						<a href="<?php echo $contact_info['viber'];?>">
 							<div class="footer-socials-item">
 								<svg
 									width="20"

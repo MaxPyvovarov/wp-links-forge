@@ -334,7 +334,7 @@
 			</section>
 			<section id="clients">
 				<div class="container">
-					<h2 class="blue fade-in">Наші клієнти</h2>
+					<h2 class="blue fade-in">Наши клиенты</h2>
 					<div class="clients-swiper fade-in">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
@@ -429,7 +429,7 @@
 			</section>
 			<section id="countries" class="index-countries">
 				<div class="container relative">
-					<h2 class="fade-in">Лінкбілдинг у 10+ країнах</h2>
+					<h2 class="fade-in">Линкбилдинг в 10+ странах</h2>
 					<div class="countries-list">
 						<div class="countries-item">
 							<div class="country uk fade-in fade-in-top">
@@ -437,7 +437,7 @@
 									src="<?php bloginfo('template_url');?>/assets/images/countries/UK.png"
 									alt="United Kingdom"
 								/>
-								<span>Велика Британія</span>
+								<span>Великобритания</span>
 							</div>
 						</div>
 						<div class="countries-item">
@@ -450,13 +450,13 @@
 							</div>
 							<div class="country fade-in fade-in-right">
 								<img src="<?php bloginfo('template_url');?>/assets/images/countries/UA.png" alt="Ukraine" />
-								<span>Україна</span>
+								<span>Украина</span>
 							</div>
 						</div>
 						<div class="countries-item fade-in fade-in-left">
 							<div class="country">
 								<img src="<?php bloginfo('template_url');?>/assets/images/countries/FR.png" alt="France" />
-								<span>Франція</span>
+								<span>Франция</span>
 							</div>
 							<div class="country fade-in fade-in-right">
 								<img src="<?php bloginfo('template_url');?>/assets/images/countries/KZ.png" alt="Kazakhstan" />
@@ -466,7 +466,7 @@
 						<div class="countries-item fade-in fade-in-left">
 							<div class="country">
 								<img src="<?php bloginfo('template_url');?>/assets/images/countries/ES.png" alt="Spain" />
-								<span>Іспанія</span>
+								<span>Испания</span>
 							</div>
 							<div class="country fade-in fade-in-right">
 								<img src="<?php bloginfo('template_url');?>/assets/images/countries/MX.png" alt="Mexico" />
@@ -476,7 +476,7 @@
 						<div class="countries-item fade-in fade-in-left">
 							<div class="country">
 								<img src="<?php bloginfo('template_url');?>/assets/images/countries/DE.png" alt="Germany" />
-								<span>Німеччина</span>
+								<span>Германия</span>
 							</div>
 							<div class="country fade-in fade-in-right">
 								<img src="<?php bloginfo('template_url');?>/assets/images/countries/AR.png" alt="Argentina" />
@@ -486,11 +486,11 @@
 						<div class="countries-item fade-in">
 							<div class="country">
 								<img src="<?php bloginfo('template_url');?>/assets/images/countries/PL.png" alt="Poland" />
-								<span>Польща</span>
+								<span>Польша</span>
 							</div>
 							<div class="country fade-in">
 								<img src="<?php bloginfo('template_url');?>/assets/images/countries/CL.png" alt="Chile" />
-								<span>Чілі</span>
+								<span>Чили</span>
 							</div>
 						</div>
 						<svg

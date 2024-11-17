@@ -15,7 +15,7 @@
 							<?php the_field('UA-home-hero-h2');?>
 						</p>
 						<button data-open-modal class="btn-primary hero__left-cta">
-							Заказать ссылки
+							Замовити посилання
 						</button>
 					</div>
 					<div class="hero__right fade-in fade-in-right">
@@ -334,7 +334,7 @@
 			</section>
 			<section id="clients">
 				<div class="container">
-					<h2 class="blue fade-in">Наши клиенты</h2>
+					<h2 class="blue fade-in">Наші клиєнти</h2>
 					<div class="clients-swiper fade-in">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
@@ -429,7 +429,7 @@
 			</section>
 			<section id="countries" class="index-countries">
 				<div class="container relative">
-					<h2 class="fade-in">Линкбилдинг в 10+ странах</h2>
+					<h2 class="fade-in">Лінкбілдинг у 10+ країнах</h2>
 					<div class="countries-list">
 						<div class="countries-item">
 							<div class="country uk fade-in fade-in-top">
@@ -437,7 +437,7 @@
 									src="<?php bloginfo('template_url');?>/assets/images/countries/UK.png"
 									alt="United Kingdom"
 								/>
-								<span>Великобритания</span>
+								<span>Велика Британія</span>
 							</div>
 						</div>
 						<div class="countries-item">
@@ -450,13 +450,13 @@
 							</div>
 							<div class="country fade-in fade-in-right">
 								<img src="<?php bloginfo('template_url');?>/assets/images/countries/UA.png" alt="Ukraine" />
-								<span>Украина</span>
+								<span>Україна</span>
 							</div>
 						</div>
 						<div class="countries-item fade-in fade-in-left">
 							<div class="country">
 								<img src="<?php bloginfo('template_url');?>/assets/images/countries/FR.png" alt="France" />
-								<span>Франция</span>
+								<span>Франція</span>
 							</div>
 							<div class="country fade-in fade-in-right">
 								<img src="<?php bloginfo('template_url');?>/assets/images/countries/KZ.png" alt="Kazakhstan" />
@@ -466,7 +466,7 @@
 						<div class="countries-item fade-in fade-in-left">
 							<div class="country">
 								<img src="<?php bloginfo('template_url');?>/assets/images/countries/ES.png" alt="Spain" />
-								<span>Испания</span>
+								<span>Іспанія</span>
 							</div>
 							<div class="country fade-in fade-in-right">
 								<img src="<?php bloginfo('template_url');?>/assets/images/countries/MX.png" alt="Mexico" />
@@ -476,7 +476,7 @@
 						<div class="countries-item fade-in fade-in-left">
 							<div class="country">
 								<img src="<?php bloginfo('template_url');?>/assets/images/countries/DE.png" alt="Germany" />
-								<span>Германия</span>
+								<span>Німеччина</span>
 							</div>
 							<div class="country fade-in fade-in-right">
 								<img src="<?php bloginfo('template_url');?>/assets/images/countries/AR.png" alt="Argentina" />
@@ -486,11 +486,11 @@
 						<div class="countries-item fade-in">
 							<div class="country">
 								<img src="<?php bloginfo('template_url');?>/assets/images/countries/PL.png" alt="Poland" />
-								<span>Польша</span>
+								<span>Польща</span>
 							</div>
 							<div class="country fade-in">
 								<img src="<?php bloginfo('template_url');?>/assets/images/countries/CL.png" alt="Chile" />
-								<span>Чили</span>
+								<span>Чілі</span>
 							</div>
 						</div>
 						<svg
@@ -646,8 +646,8 @@
 						</button>
 						<div class="modal-left">
 							<div class="modal-left-text">
-								<h3 class="blue">Оставляйте заявку!</h3>
-								<span>Мы свяжемся с вами в кратчайшие сроки</span>
+								<h3 class="blue">Залишайте заявку!</h3>
+								<span>Ми зв’яжемося з вами найближчим часом.</span>
 							</div>
 							<img src="<?php bloginfo('template_url');?>/assets/images/modal-img.svg" alt="Contact us" />
 						</div>
@@ -655,7 +655,7 @@
 							<form id="modal-form">
 								<div class="modal-inputs">
 									<div class="input-container">
-										<p class="placeholder">Имя*</p>
+										<p class="placeholder">Ім'я*</p>
 										<input
 											type="text"
 											name="name"
@@ -679,7 +679,7 @@
 										</svg>
 									</div>
 									<div class="comm-method">
-										<p class="placeholder">Способ связи*</p>
+										<p class="placeholder">Спосіб зв'язку*</p>
 										<div class="radio-group">
 											<div class="radio-button">
 												<input
@@ -688,7 +688,7 @@
 													id="phone"
 													value="phone"
 												/>
-												<label for="phone">Номер телефона</label>
+												<label for="phone">Номер телефону</label>
 											</div>
 											<div class="radio-button">
 												<input
@@ -729,7 +729,7 @@
 										</div>
 									</div>
 									<div id="dynamic-input" class="input-container">
-										<p class="placeholder">Номер телефона*</p>
+										<p class="placeholder">Номер телефону*</p>
 										<input type="tel" name="phone" class="input dynamic" />
 										<svg
 											class="line-svg"
@@ -748,7 +748,7 @@
 										</svg>
 									</div>
 									<div class="input-container">
-										<p class="placeholder">Сообщение</p>
+										<p class="placeholder">Повідомлення</p>
 										<input
 											type="text"
 											name="message"
@@ -774,16 +774,15 @@
 									</div>
 								</div>
 								<p class="modal-subtext">
-									Нажимая кнопку “Отправить”, вы даете согласие на обработку
-									персональных данных
+									Натискаючи кнопку "Відправити", ви погоджуєтеся на обробку персональних даних.
 								</p>
 								<button class="modal-submit btn-primary" type="submit">
-									Отправить
+									Відправити
 								</button>
 							</form>
 						</div>
 						<div class="modal-submitted">
-							<h3 class="blue">Ваш запрос успешно отправлен!</h3>
+							<h3 class="blue">Ваш запит успішно відправлено!</h3>
 							<img
 								src="<?php bloginfo('template_url');?>/assets/images/form-submitted.svg"
 								alt="form submitted"
