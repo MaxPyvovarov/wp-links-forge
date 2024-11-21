@@ -332,6 +332,7 @@ section {
 	align-items: stretch;
 	justify-content: center;
 	gap: 24px;
+	width: 100%;
 }
 
 .prices-item {

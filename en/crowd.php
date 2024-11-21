@@ -1,6 +1,6 @@
 <?php
 /*
-	Template Name: UA crowd
+	Template Name: EN crowd
 */
 ?>
 
@@ -10,9 +10,9 @@
 			<section id="hero">
 				<div class="container relative">
 					<div class="hero-content fade-in">
-						<h1><?php the_field('UA-crowd-hero-h1'); ?></h1>
-						<p><?php the_field('UA-crowd-hero-h2'); ?></p>
-						<a href="#prices" class="btn-primary">Замовити посилання </a>
+						<h1><?php the_field('EN-crowd-hero-h1'); ?></h1>
+						<p><?php the_field('EN-crowd-hero-h2'); ?></p>
+						<a href="#prices" class="btn-primary">Order links</a>
 					</div>
 					<img
 						class="hero-main-img crowd fade-in"
@@ -30,12 +30,12 @@
 				<div class="container">
 					<div class="advantages-content">
 						<div class="advantages-text fade-in fade-in-left">
-							<h2 class="blue"><?php the_field('UA-crowd-advantages-h1'); ?></h2>
-							<p><?php the_field('UA-crowd-advantages-h2'); ?></p>
+							<h2 class="blue"><?php the_field('EN-crowd-advantages-h1'); ?></h2>
+							<p><?php the_field('EN-crowd-advantages-h2'); ?></p>
 						</div>
 						<img
 							class="advantages-img crowd fade-in fade-in-right"
-							src="<?php the_field('UA-crowd-advantages-img'); ?>"
+							src="<?php the_field('EN-crowd-advantages-img'); ?>"
 							alt=""
 						/>
 					</div>
@@ -44,11 +44,11 @@
 			<section id="why-us">
 				<div class="container relative">
 					<h2 class="blue fade-in">
-						<?php the_field('UA-crowd-whyus-h1'); ?>
+						<?php the_field('EN-crowd-whyus-h1'); ?>
 					</h2>
 					<div class="why-us-content">
 						<?php
-							$block = get_field('UA-crowd-whyus-block1');
+							$block = get_field('EN-crowd-whyus-block1');
 							if( $block ): ?>
 							<div class="reason fade-in">
 								<div class="reason-heading">
@@ -65,7 +65,7 @@
 							</div>
 						<?php endif; ?>
 						<?php
-							$block = get_field('UA-crowd-whyus-block2');
+							$block = get_field('EN-crowd-whyus-block2');
 							if( $block ): ?>
 							<div class="reason fade-in">
 								<div class="reason-heading">
@@ -82,7 +82,7 @@
 							</div>
 						<?php endif; ?>
 						<?php
-							$block = get_field('UA-crowd-whyus-block3');
+							$block = get_field('EN-crowd-whyus-block3');
 							if( $block ): ?>
 							<div class="reason fade-in">
 								<div class="reason-heading">
@@ -99,7 +99,7 @@
 							</div>
 						<?php endif; ?>
 						<?php
-							$block = get_field('UA-crowd-whyus-block4');
+							$block = get_field('EN-crowd-whyus-block4');
 							if( $block ): ?>
 							<div class="reason fade-in">
 								<div class="reason-heading">
@@ -116,7 +116,7 @@
 							</div>
 						<?php endif; ?>
 						<?php
-							$block = get_field('UA-crowd-whyus-block5');
+							$block = get_field('EN-crowd-whyus-block5');
 							if( $block ): ?>
 							<div class="reason fade-in">
 								<div class="reason-heading">
@@ -149,60 +149,60 @@
 			</section>
 			<section id="countries">
 				<div class="container relative">
-					<h2 class="fade-in">Географія наших послуг із Крауд посилань</h2>
+					<h2 class="fade-in">The geography of our crowd-linking services</h2>
 					<div class="countries-list">
 						<div class="country fade-in">
 							<img
 								src="<?php bloginfo('template_url');?>/assets/images/countries/UK.png"
 								alt="United Kingdom"
 							/>
-							<span>Велика Британія</span>
+							<span>United Kingdom</span>
 						</div>
 						<div class="country fade-in">
 							<img
 								src="<?php bloginfo('template_url');?>/assets/images/countries/US.png"
 								alt="United States"
 							/>
-							<span>США</span>
+							<span>USA</span>
 						</div>
 						<div class="country fade-in">
 							<img src="<?php bloginfo('template_url');?>/assets/images/countries/FR.png" alt="France" />
-							<span>Франція</span>
+							<span>France</span>
 						</div>
 						<div class="country fade-in">
 							<img src="<?php bloginfo('template_url');?>/assets/images/countries/ES.png" alt="Spain" />
-							<span>Іспанія</span>
+							<span>Spain</span>
 						</div>
 						<div class="country fade-in">
 							<img src="<?php bloginfo('template_url');?>/assets/images/countries/DE.png" alt="Germany" />
-							<span>Німеччина</span>
+							<span>Germany</span>
 						</div>
 						<div class="country fade-in">
 							<img src="<?php bloginfo('template_url');?>/assets/images/countries/PL.png" alt="Poland" />
-							<span>Польща</span>
+							<span>Poland</span>
 						</div>
 						<div class="country fade-in">
 							<img src="<?php bloginfo('template_url');?>/assets/images/countries/UA.png" alt="Ukraine" />
-							<span>Україна</span>
+							<span>Ukraine</span>
 						</div>
 						<div class="country fade-in">
 							<img
 								src="<?php bloginfo('template_url');?>/assets/images/countries/KZ.png"
 								alt="Kazakhstan"
 							/>
-							<span>Казахстан</span>
+							<span>Kazakhstan</span>
 						</div>
 						<div class="country fade-in">
 							<img src="<?php bloginfo('template_url');?>/assets/images/countries/MX.png" alt="Mexico" />
-							<span>Мексика</span>
+							<span>Mexico</span>
 						</div>
 						<div class="country fade-in">
 							<img src="<?php bloginfo('template_url');?>/assets/images/countries/AR.png" alt="Argentina" />
-							<span>Аргентина</span>
+							<span>Argentina</span>
 						</div>
 						<div class="country fade-in">
 							<img src="<?php bloginfo('template_url');?>/assets/images/countries/CL.png" alt="Chile" />
-							<span>Чілі</span>
+							<span>Chile</span>
 						</div>
 					</div>
 					<img
@@ -221,11 +221,11 @@
 				<div class="container">
 					<div class="impact-content">
 						<div class="impact-text fade-in fade-in-left">
-							<h2 class="blue"><?php the_field('UA-crowd-impact-h1'); ?></h2>
-							<p><?php the_field('UA-crowd-impact-text'); ?></p>
+							<h2 class="blue"><?php the_field('EN-crowd-impact-h1'); ?></h2>
+							<p><?php the_field('EN-crowd-impact-text'); ?></p>
 						</div>
 						<img
-							src="<?php the_field('UA-crowd-impact-img'); ?>"
+							src="<?php the_field('EN-crowd-impact-img'); ?>"
 							class="impact-img fade-in fade-in-right"
 							alt="impact"
 						/>
@@ -234,19 +234,19 @@
 			</section>
 			<section id="prices">
 				<div class="container">
-					<h2 class="fade-in"><?php the_field('UA-crowd-prices-h1'); ?></h2>
+					<h2 class="fade-in"><?php the_field('EN-crowd-prices-h1'); ?></h2>
 					<div class="prices-list">
 						<div class="row">
 							<?php
-							$block = get_field('UA-crowd-prices-item1');
+							$block = get_field('EN-crowd-prices-item1');
 							if( $block ): ?>
 								<div class="prices-item relative fade-in">
 									<div class="content">
 										<h3 class="blue"><?php echo $block['title']; ?></h3>
 										<div class="price-block">
 											<span class="main-price relative"><?php echo $block['full-price']; ?></span>
-											<span class="link-amount"><?php echo $block['link-amount']; ?> посилань</span>
-											<span class="single-price">(<b>$<?php echo $block['link-price']; ?></b> за посилання)</span>
+											<span class="link-amount"><?php echo $block['link-amount']; ?> links</span>
+											<span class="single-price">(<b>$<?php echo $block['link-price']; ?></b> per link)</span>
 										</div>
 										<div class="options-block">
 											<?php
@@ -281,7 +281,7 @@
 										data-open-modal
 										class="btn-secondary"
 									>
-										Замовити зараз
+										Order now
 									</button>
 									<?php
 												$label = $block['label'];
@@ -291,15 +291,15 @@
 								</div>
 							<?php endif; ?>
 							<?php
-							$block = get_field('UA-crowd-prices-item2');
+							$block = get_field('EN-crowd-prices-item2');
 							if( $block ): ?>
 								<div class="prices-item relative fade-in">
 									<div class="content">
 										<h3 class="blue"><?php echo $block['title']; ?></h3>
 										<div class="price-block">
 											<span class="main-price relative"><?php echo $block['full-price']; ?></span>
-											<span class="link-amount"><?php echo $block['link-amount']; ?> посилань</span>
-											<span class="single-price">(<b>$<?php echo $block['link-price']; ?></b> за посилання)</span>
+											<span class="link-amount"><?php echo $block['link-amount']; ?> links</span>
+											<span class="single-price">(<b>$<?php echo $block['link-price']; ?></b> per link)</span>
 										</div>
 										<div class="options-block">
 											<?php
@@ -344,7 +344,7 @@
 								data-open-modal
 								class="btn-secondary"
 							>
-								Замовити зараз
+								Order now
 							</button>
 							<?php
 										$label = $block['label'];
@@ -356,15 +356,15 @@
 						</div>
 						<div class="row">
 							<?php
-							$block = get_field('UA-crowd-prices-item3');
+							$block = get_field('EN-crowd-prices-item3');
 							if( $block ): ?>
 								<div class="prices-item relative fade-in">
 									<div class="content">
 										<h3 class="blue"><?php echo $block['title']; ?></h3>
 										<div class="price-block">
 											<span class="main-price relative"><?php echo $block['full-price']; ?></span>
-											<span class="link-amount"><?php echo $block['link-amount']; ?> посилань</span>
-											<span class="single-price">(<b>$<?php echo $block['link-price']; ?></b> за посилання)</span>
+											<span class="link-amount"><?php echo $block['link-amount']; ?> links</span>
+											<span class="single-price">(<b>$<?php echo $block['link-price']; ?></b> per link)</span>
 										</div>
 										<div class="options-block">
 											<?php
@@ -409,7 +409,7 @@
 								data-open-modal
 								class="btn-secondary"
 							>
-								Замовити зараз
+								Order now
 							</button>
 							<?php
 										$label = $block['label'];
@@ -420,20 +420,20 @@
 						<?php endif; ?>
 							<div class="prices-item special fade-in">
 								<div class="content">
-									<h3 class="blue"><?php the_field('UA-crowd-special-h1'); ?></h3>
-									<p class="subheading"><?php the_field('UA-crowd-special-h2'); ?></p>
+									<h3 class="blue"><?php the_field('EN-crowd-special-h1'); ?></h3>
+									<p class="subheading"><?php the_field('EN-crowd-special-h2'); ?></p>
 									<img
 										src="<?php bloginfo('template_url');?>/assets/images/services/special-offer.svg"
 										alt=""
 									/>
-									<p class="caption"><?php the_field('UA-crowd-special-h1'); ?></p>
+									<p class="caption"><?php the_field('EN-crowd-special-h1'); ?></p>
 								</div>
 								<button
 									data-selected-plan="special"
 									data-open-modal
 									class="btn-secondary"
 								>
-									Замовити зараз
+									Order now
 								</button>
 							</div>
 						</div>
@@ -444,11 +444,11 @@
 				<div class="container">
 					<div class="feedback-content">
 						<div class="feedback-left fade-in fade-in-left">
-							<h2 class="blue"><?php the_field('UA-crowd-feedback-h1'); ?></h2>
+							<h2 class="blue"><?php the_field('EN-crowd-feedback-h1'); ?></h2>
 							<form class="feedback-form" novalidate>
 								<div class="feedback-inputs">
 									<div class="input-container">
-										<p class="placeholder">Ім'я*</p>
+										<p class="placeholder">Name*</p>
 										<input
 											type="text"
 											name="name"
@@ -472,7 +472,7 @@
 										</svg>
 									</div>
 									<div class="input-container">
-										<p class="placeholder">Номер телефону*</p>
+										<p class="placeholder">Phone number*</p>
 										<input type="tel" name="phone" class="input" />
 										<svg
 											class="line-svg"
@@ -511,10 +511,10 @@
 									</div>
 								</div>
 								<p class="feedback-subtext">
-									Натискаючи кнопку "Відправити", ви погоджуєтеся на обробку персональних даних.
+									By clicking the button, you agree to the processing of personal data
 								</p>
 								<button class="feedback-submit btn-primary" type="submit">
-									Отримати консультацію
+									Get a consultation
 								</button>
 							</form>
 						</div>
@@ -534,8 +534,8 @@
 						</button>
 						<div class="modal-left">
 							<div class="modal-left-text">
-								<h3 class="blue">Залишайте заявку!</h3>
-								<span>Ми зв’яжемося з вами найближчим часом</span>
+								<h3 class="blue">Submit your request!</h3>
+								<span>We will contact you as soon as possible</span>
 							</div>
 							<img src="<?php bloginfo('template_url');?>/assets/images/modal-img.svg" alt="Contact us" />
 						</div>
@@ -543,7 +543,7 @@
 							<form id="modal-form">
 								<div class="modal-inputs">
 									<div class="input-container">
-										<p class="placeholder">Ім'я*</p>
+										<p class="placeholder">Name*</p>
 										<input
 											type="text"
 											name="name"
@@ -567,7 +567,7 @@
 										</svg>
 									</div>
 									<div class="comm-method">
-										<p class="placeholder">Спосіб зв'язку*</p>
+										<p class="placeholder">Contact method*</p>
 										<div class="radio-group">
 											<div class="radio-button">
 												<input
@@ -576,7 +576,7 @@
 													id="phone"
 													value="phone"
 												/>
-												<label for="phone">Номер телефону</label>
+												<label for="phone">Phone number</label>
 											</div>
 											<div class="radio-button">
 												<input
@@ -617,7 +617,7 @@
 										</div>
 									</div>
 									<div id="dynamic-input" class="input-container">
-										<p class="placeholder">Номер телефону*</p>
+										<p class="placeholder">Phone number*</p>
 										<input type="tel" name="phone" class="input dynamic" />
 										<svg
 											class="line-svg"
@@ -636,7 +636,7 @@
 										</svg>
 									</div>
 									<div class="input-container">
-										<p class="placeholder">Повідомлення</p>
+										<p class="placeholder">Message</p>
 										<input
 											type="text"
 											name="message"
@@ -662,15 +662,15 @@
 									</div>
 								</div>
 								<p class="modal-subtext">
-									Натискаючи кнопку "Відправити", ви погоджуєтеся на обробку персональних даних.
+									By clicking the "Send" button, you agree to the processing of personal data
 								</p>
 								<button class="modal-submit btn-primary" type="submit">
-									Відправити
+									Send
 								</button>
 							</form>
 						</div>
 						<div class="modal-submitted">
-							<h3 class="blue">Ваш запит успішно відправлено!</h3>
+							<h3 class="blue">Your request has been successfully sent!</h3>
 							<img
 								src="<?php bloginfo('template_url');?>/assets/images/form-submitted.svg"
 								alt="form submitted"

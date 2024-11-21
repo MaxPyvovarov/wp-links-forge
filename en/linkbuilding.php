@@ -1,5 +1,11 @@
+<?php
+/*
+	Template Name: EN linkbuilding
+*/
+?>
+
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -54,7 +60,7 @@
 						Связаться
 					</button>
 					<div class="dropdown lang-select">
-						<span class="selected-lang">UA</span>
+						<span class="selected-lang">EN</span>
 						<img src="../../assets/icons/arrow-down.svg" alt="show more" />
 						<div class="dropdown-menu lang-menu">
 							<ul>
@@ -288,14 +294,14 @@
 			</section>
 			<section id="countries">
 				<div class="container relative">
-					<h2 class="fade-in">Географія наших послуг із Крауд посилань</h2>
+					<h2 class="fade-in">География наших услуг по Крауд ссылкам</h2>
 					<div class="countries-list">
 						<div class="country fade-in">
 							<img
 								src="../../assets/images/countries/UK.png"
 								alt="United Kingdom"
 							/>
-							<span>Велика Британія</span>
+							<span>Великобритания</span>
 						</div>
 						<div class="country fade-in">
 							<img
@@ -306,23 +312,23 @@
 						</div>
 						<div class="country fade-in">
 							<img src="../../assets/images/countries/FR.png" alt="France" />
-							<span>Франція</span>
+							<span>Франция</span>
 						</div>
 						<div class="country fade-in">
 							<img src="../../assets/images/countries/ES.png" alt="Spain" />
-							<span>Іспанія</span>
+							<span>Испания</span>
 						</div>
 						<div class="country fade-in">
 							<img src="../../assets/images/countries/DE.png" alt="Germany" />
-							<span>Німеччина</span>
+							<span>Германия</span>
 						</div>
 						<div class="country fade-in">
 							<img src="../../assets/images/countries/PL.png" alt="Poland" />
-							<span>Польща</span>
+							<span>Польша</span>
 						</div>
 						<div class="country fade-in">
 							<img src="../../assets/images/countries/UA.png" alt="Ukraine" />
-							<span>Україна</span>
+							<span>Украина</span>
 						</div>
 						<div class="country fade-in">
 							<img
@@ -341,7 +347,7 @@
 						</div>
 						<div class="country fade-in">
 							<img src="../../assets/images/countries/CL.png" alt="Chile" />
-							<span>Чілі</span>
+							<span>Чили</span>
 						</div>
 					</div>
 					<img

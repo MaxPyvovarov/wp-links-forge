@@ -647,7 +647,7 @@
 						<div class="modal-left">
 							<div class="modal-left-text">
 								<h3 class="blue">Submit your request!</h3>
-								<span>We will contact you as soon as possible.</span>
+								<span>We will contact you as soon as possible</span>
 							</div>
 							<img src="<?php bloginfo('template_url');?>/assets/images/modal-img.svg" alt="Contact us" />
 						</div>
@@ -774,7 +774,7 @@
 									</div>
 								</div>
 								<p class="modal-subtext">
-									By clicking the "Send" button, you agree to the processing of personal data.
+									By clicking the "Send" button, you agree to the processing of personal data
 								</p>
 								<button class="modal-submit btn-primary" type="submit">
 									Send
