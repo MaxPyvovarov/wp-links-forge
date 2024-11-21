@@ -29,6 +29,7 @@
 								'reviews' => 'Публикация отзывов',
 								'linkbuilding' => 'Линкбилдинг под ключ',
 						],
+						'rights' => 'Все права защищены'
 				],
 				'en' => [
 						'services' => 'Services',
@@ -43,6 +44,7 @@
 								'reviews' => 'Review publications',
 								'linkbuilding' => 'Turnkey linkbuilding',
 						],
+						'rights' => 'All rights reserved'
 				],
 				'ua' => [
 						'services' => 'Послуги',
@@ -57,6 +59,7 @@
 								'reviews' => 'Публікація відгуків',
 								'linkbuilding' => 'Лінкбілдінг під ключ',
 						],
+						'rights' => 'Всі права захищені'
 				],
 			];
 
@@ -198,7 +201,7 @@ $current_lang = in_array($uri_segments[0], ['ru', 'en', 'ua']) ? $uri_segments[0
 				</div>
 				<div class="footer-rights">
 					<p>
-						Все права защищены ©Links Forge <span id="footer-date">2024</span>
+						<?php echo $translations[$current_lang]['rights']; ?> ©Links Forge <span id="footer-date">2024</span>
 					</p>
 				</div>
 				<img
