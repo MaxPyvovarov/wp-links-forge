@@ -388,6 +388,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 		if (getCurrentPageByURL() !== 'contacts') {
 			const nameInput = modalForm.querySelector('input[name="name"]');
+			const messageInput = modalForm.querySelector('input[name="message"]');
 			const commMethodInput = modalForm.querySelector(
 				'#dynamic-input input.dynamic'
 			);
@@ -401,6 +402,7 @@ window.addEventListener('DOMContentLoaded', () => {
 					...(selectedPlanBeforeModal && {
 						selectedPlan: selectedPlanBeforeModal,
 					}),
+					message: messageInput?.value,
 					...(selectedPlanBeforeModal && {page: getCurrentPageByURL()}),
 				};
 				const submitTimeline = gsap.timeline({
@@ -447,6 +449,7 @@ window.addEventListener('DOMContentLoaded', () => {
 					modal.classList.remove('active');
 					document.querySelector('body').classList.remove('backdrop-opened');
 				}, 5000);
+				console.log(submittedForm);
 			}
 
 			//else {code for not valid};

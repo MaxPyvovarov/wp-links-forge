@@ -652,7 +652,7 @@
 							<img src="<?php bloginfo('template_url');?>/assets/images/modal-img.svg" alt="Contact us" />
 						</div>
 						<div class="modal-right">
-							<form id="modal-form">
+							<form id="modal-form" action="send_email.php" method="POST"">
 								<div class="modal-inputs">
 									<div class="input-container">
 										<p class="placeholder">Имя*</p>

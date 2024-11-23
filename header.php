@@ -7,85 +7,86 @@
 
 		<?php
 // Массивы с SEO-тайтлами для разных языков
-$seo_titles = [
-    'ru' => [
-        '' => 'SEO Услуги | Качественный Линкбилдинг и Цифровой Маркетинг | Links Forge',  // Для главной страницы
-        '404.html' => '404 Страница не найдена | Links Forge',
-        'contacts.html' => 'Свяжитесь с нами для SEO услуг | Links Forge',
-        'faq.html' => 'Часто задаваемые вопросы | SEO и Цифровой Маркетинг | Links Forge',
-        'services/crowd.html' => 'Услуга Crowd Links | Купить Качественные Crowd Links | Links Forge',
-        'services/linkbuilding.html' => 'Комплексный Линкбилдинг | Качественные SEO Ссылки | Links Forge',
-        'services/outreach.html' => 'Услуга Outreach Link Building | Получить Качественные Обратные Ссылки | Links Forge',
-        'services/reviews.html' => 'Услуга Публикации Отзывов | Повышение Онлайн Репутации | Links Forge',
-        'services/signals.html' => 'Услуга Социальных Сигналов | Улучшение SEO через Социальные Сети | Links Forge',
-        'services/submits.html' => 'Услуга Сабмитов | Эффективная Подача Ссылок для SEO | Links Forge',
-    ],
-    'en' => [
-        '' => 'SEO Services | High-Quality Link Building & Digital Marketing | Links Forge',  // Для главной страницы
-        '404.html' => '404 Page Not Found | Links Forge',
-        'contacts.html' => 'Contact Us for SEO Services | Links Forge',
-        'faq.html' => 'Frequently Asked Questions | SEO & Digital Marketing | Links Forge',
-        'services/crowd.html' => 'Crowd Links Service | Buy Quality Crowd Links | Links Forge',
-        'services/linkbuilding.html' => 'Comprehensive Link Building Services | High-Quality SEO Links | Links Forge',
-        'services/outreach.html' => 'Outreach Link Building Service | Gain Quality Backlinks | Links Forge',
-        'services/reviews.html' => 'Review Publication Service | Boost Your Online Reputation | Links Forge',
-        'services/signals.html' => 'Social Signals Service | Improve SEO with Social Media Engagement | Links Forge',
-        'services/submits.html' => 'Submit Links Service | Effective Link Submission for SEO | Links Forge',
-    ],
-    'ua' => [
-        '' => 'SEO Послуги | Якісне Лінкбілдінг та Цифровий Маркетинг | Links Forge',  // Для главной страницы
-        '404.html' => '404 Сторінка не знайдена | Links Forge',
-        'contacts.html' => 'Зв’язатися з нами для SEO послуг | Links Forge',
-        'faq.html' => 'Часті Запитання | SEO та Цифровий Маркетинг | Links Forge',
-        'services/crowd.html' => 'Послуга Crowd Links | Купити Якісні Crowd Links | Links Forge',
-        'services/linkbuilding.html' => 'Комплексний Лінкбілдінг | Якісні SEO Посилання | Links Forge',
-        'services/outreach.html' => 'Послуга Outreach Link Building | Отримати Якісні Зворотні Посилання | Links Forge',
-        'services/reviews.html' => 'Послуга Публікації Відгуків | Підвищити Вашу Онлайн Репутацію | Links Forge',
-        'services/signals.html' => 'Послуга Соціальних Сигналів | Покращення SEO через Соціальні Медіа | Links Forge',
-        'services/submits.html' => 'Послуга Сабмітів | Ефективна Подання Посилань для SEO | Links Forge',
-    ],
-];
+// $seo_titles = [
+//     'ru' => [
+//         '' => 'SEO Услуги | Качественный Линкбилдинг и Цифровой Маркетинг | Links Forge',  // Для главной страницы
+//         '404.html' => '404 Страница не найдена | Links Forge',
+//         'contacts.html' => 'Свяжитесь с нами для SEO услуг | Links Forge',
+//         'faq.html' => 'Часто задаваемые вопросы | SEO и Цифровой Маркетинг | Links Forge',
+//         'services/crowd.html' => 'Услуга Crowd Links | Купить Качественные Crowd Links | Links Forge',
+//         'services/linkbuilding.html' => 'Комплексный Линкбилдинг | Качественные SEO Ссылки | Links Forge',
+//         'services/outreach.html' => 'Услуга Outreach Link Building | Получить Качественные Обратные Ссылки | Links Forge',
+//         'services/reviews.html' => 'Услуга Публикации Отзывов | Повышение Онлайн Репутации | Links Forge',
+//         'services/signals.html' => 'Услуга Социальных Сигналов | Улучшение SEO через Социальные Сети | Links Forge',
+//         'services/submits.html' => 'Услуга Сабмитов | Эффективная Подача Ссылок для SEO | Links Forge',
+//     ],
+//     'en' => [
+//         '' => 'SEO Services | High-Quality Link Building & Digital Marketing | Links Forge',  // Для главной страницы
+//         '404.html' => '404 Page Not Found | Links Forge',
+//         'contacts.html' => 'Contact Us for SEO Services | Links Forge',
+//         'faq.html' => 'Frequently Asked Questions | SEO & Digital Marketing | Links Forge',
+//         'services/crowd.html' => 'Crowd Links Service | Buy Quality Crowd Links | Links Forge',
+//         'services/linkbuilding.html' => 'Comprehensive Link Building Services | High-Quality SEO Links | Links Forge',
+//         'services/outreach.html' => 'Outreach Link Building Service | Gain Quality Backlinks | Links Forge',
+//         'services/reviews.html' => 'Review Publication Service | Boost Your Online Reputation | Links Forge',
+//         'services/signals.html' => 'Social Signals Service | Improve SEO with Social Media Engagement | Links Forge',
+//         'services/submits.html' => 'Submit Links Service | Effective Link Submission for SEO | Links Forge',
+//     ],
+//     'ua' => [
+//         '' => 'SEO Послуги | Якісний Лінкбілдінг та Цифровий Маркетинг | Links Forge',  // Для главной страницы
+//         '404.html' => '404 Сторінка не знайдена | Links Forge',
+//         'contacts.html' => 'Зв’язатися з нами для SEO послуг | Links Forge',
+//         'faq.html' => 'Часті Запитання | SEO та Цифровий Маркетинг | Links Forge',
+//         'services/crowd.html' => 'Послуга Crowd Links | Купити Якісні Crowd Links | Links Forge',
+//         'services/linkbuilding.html' => 'Комплексний Лінкбілдінг | Якісні SEO Посилання | Links Forge',
+//         'services/outreach.html' => 'Послуга Outreach Link Building | Отримати Якісні Зворотні Посилання | Links Forge',
+//         'services/reviews.html' => 'Послуга Публікації Відгуків | Підвищити Вашу Онлайн Репутацію | Links Forge',
+//         'services/signals.html' => 'Послуга Соціальних Сигналів | Покращення SEO через Соціальні Медіа | Links Forge',
+//         'services/submits.html' => 'Послуга Сабмітів | Ефективна Подання Посилань для SEO | Links Forge',
+//     ],
+// ];
 
-function get_current_language() {
-    $path = trim($_SERVER['REQUEST_URI'], '/');
-    if (preg_match('/^en(\/|$)/', $path)) {
-        return 'en';
-    } elseif (preg_match('/^ru(\/|$)/', $path)) {
-        return 'ru';
-    }
-    return 'ua'; // По умолчанию украинский
-}
+// function get_current_language() {
+//     $path = trim($_SERVER['REQUEST_URI'], '/');
+//     if (preg_match('/^en(\/|$)/', $path)) {
+//         return 'en';
+//     } elseif (preg_match('/^ru(\/|$)/', $path)) {
+//         return 'ru';
+//     }
+//     return 'ua'; // По умолчанию украинский
+// }
 
 
-// Функция для генерации тайтла
-function get_dynamic_title($current_page, $seo_titles) {
-    $language = get_current_language();
+// // Функция для генерации тайтла
+// function get_dynamic_title($current_page, $seo_titles) {
+//     $language = get_current_language();
 		
-    // Главная страница
-    if ($current_page == '' || $current_page == 'index.php') {
-			$current_page = '';
-    }
+//     // Главная страница
+//     if ($current_page == '' || $current_page == 'index.php') {
+// 			$current_page = '';
+//     }
 		
-    // Проверяем, есть ли ключ в массиве
-    if (isset($seo_titles[$language][$current_page])) {
-			return $seo_titles[$language][$current_page];
-    }
-    return 'SEO Услуги | Links Forge';
-}
+//     // Проверяем, есть ли ключ в массиве
+//     if (isset($seo_titles[$language][$current_page])) {
+// 			return $seo_titles[$language][$current_page];
+//     }
+//     return 'SEO Услуги | Links Forge';
+// }
 
-// Получаем текущий путь
-$current_page = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH); // Только путь
-$current_page = ltrim($current_page, '/'); // Удаляем начальный слеш
+// // Получаем текущий путь
+// $current_page = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH); // Только путь
+// $current_page = ltrim($current_page, '/'); // Удаляем начальный слеш
 
-$path_parts = explode('/', $current_page, 2); // Разбиваем строку на максимум 2 части
-if (in_array($path_parts[0], ['en', 'ru', 'ua'])) {
-    $current_page = $path_parts[1] ?? ''; // Если есть 2-я часть, используем её; иначе пустая строка
-}
+// $path_parts = explode('/', $current_page, 2); // Разбиваем строку на максимум 2 части
+// if (in_array($path_parts[0], ['en', 'ru', 'ua'])) {
+//     $current_page = $path_parts[1] ?? ''; // Если есть 2-я часть, используем её; иначе пустая строка
+// }
 
-$title = get_dynamic_title($current_page, $seo_titles);
+// $title = get_dynamic_title($current_page, $seo_titles);
 
-echo "<title>" . htmlspecialchars($title) . "</title>";
+// echo "<title>" . htmlspecialchars($title) . "</title>";
 ?>
+<title><?php the_title(); ?></title>
 
 	<?php wp_head();?>
 
