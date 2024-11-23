@@ -12,7 +12,7 @@
 					<div class="hero-content fade-in">
 						<h1><?php the_field('UA-linkbuilding-hero-h1'); ?></h1>
 						<p><?php the_field('UA-linkbuilding-hero-h2'); ?></p>
-						<a href="#prices" class="btn-primary">Замовити посилання </a>
+						<a href="#prices" class="btn-primary">Замовити посилання</a>
 					</div>
 					<img
 						class="hero-main-img linkbuilding fade-in"

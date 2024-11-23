@@ -12,7 +12,7 @@
 					<div class="hero-content fade-in">
 						<h1><?php the_field('RU-outreach-hero-h1'); ?></h1>
 						<p><?php the_field('RU-outreach-hero-h2'); ?></p>
-						<a href="#prices" class="btn-primary">Заказать ссылки </a>
+						<a href="#prices" class="btn-primary">Заказать ссылки</a>
 					</div>
 					<img
 						class="hero-main-img outreach fade-in"
