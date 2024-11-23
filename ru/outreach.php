@@ -1,6 +1,6 @@
 <?php
 /*
-	Template Name: EN linkbuilding
+	Template Name: RU outreach
 */
 ?>
 
@@ -10,17 +10,17 @@
 			<section id="hero">
 				<div class="container relative">
 					<div class="hero-content fade-in">
-						<h1><?php the_field('EN-linkbuilding-hero-h1'); ?></h1>
-						<p><?php the_field('EN-linkbuilding-hero-h2'); ?></p>
-						<a href="#prices" class="btn-primary">Order links</a>
+						<h1><?php the_field('RU-outreach-hero-h1'); ?></h1>
+						<p><?php the_field('RU-outreach-hero-h2'); ?></p>
+						<a href="#prices" class="btn-primary">Заказать ссылки </a>
 					</div>
 					<img
-						class="hero-main-img linkbuilding fade-in"
+						class="hero-main-img outreach fade-in"
 						src="<?php bloginfo('template_url');?>/assets/images/services/crowd/hero-main.svg"
 						alt=""
 					/>
 					<img
-						class="hero-bg-img linkbuilding"
+						class="hero-bg-img outreach"
 						src="<?php bloginfo('template_url');?>/assets/images/services/crowd/hero-bg.svg"
 						alt=""
 					/>
@@ -30,12 +30,12 @@
 				<div class="container">
 					<div class="advantages-content">
 						<div class="advantages-text fade-in fade-in-left">
-							<h2 class="blue"><?php the_field('EN-linkbuilding-advantages-h1'); ?></h2>
-							<p><?php the_field('EN-linkbuilding-advantages-h2'); ?></p>
+							<h2 class="blue"><?php the_field('RU-outreach-advantages-h1'); ?></h2>
+							<p><?php the_field('RU-outreach-advantages-h2'); ?></p>
 						</div>
 						<img
-							class="advantages-img linkbuilding fade-in fade-in-right"
-							src="<?php the_field('EN-linkbuilding-advantages-img'); ?>"
+							class="advantages-img outreach fade-in fade-in-right"
+							src="<?php the_field('RU-outreach-advantages-img'); ?>"
 							alt=""
 						/>
 					</div>
@@ -44,11 +44,11 @@
 			<section id="why-us">
 				<div class="container relative">
 					<h2 class="blue fade-in">
-						<?php the_field('EN-linkbuilding-whyus-h1'); ?>
+						<?php the_field('RU-outreach-whyus-h1'); ?>
 					</h2>
 					<div class="why-us-content">
 						<?php
-							$block = get_field('EN-linkbuilding-whyus-block1');
+							$block = get_field('RU-outreach-whyus-block1');
 							if( $block ): ?>
 							<div class="reason fade-in">
 								<div class="reason-heading">
@@ -65,7 +65,7 @@
 							</div>
 						<?php endif; ?>
 						<?php
-							$block = get_field('EN-linkbuilding-whyus-block2');
+							$block = get_field('RU-outreach-whyus-block2');
 							if( $block ): ?>
 							<div class="reason fade-in">
 								<div class="reason-heading">
@@ -82,7 +82,7 @@
 							</div>
 						<?php endif; ?>
 						<?php
-							$block = get_field('EN-linkbuilding-whyus-block3');
+							$block = get_field('RU-outreach-whyus-block3');
 							if( $block ): ?>
 							<div class="reason fade-in">
 								<div class="reason-heading">
@@ -99,7 +99,7 @@
 							</div>
 						<?php endif; ?>
 						<?php
-							$block = get_field('EN-linkbuilding-whyus-block4');
+							$block = get_field('RU-outreach-whyus-block4');
 							if( $block ): ?>
 							<div class="reason fade-in">
 								<div class="reason-heading">
@@ -116,7 +116,7 @@
 							</div>
 						<?php endif; ?>
 						<?php
-							$block = get_field('EN-linkbuilding-whyus-block5');
+							$block = get_field('RU-outreach-whyus-block5');
 							if( $block ): ?>
 							<div class="reason fade-in">
 								<div class="reason-heading">
@@ -149,60 +149,60 @@
 			</section>
 			<section id="countries">
 				<div class="container relative">
-					<h2 class="fade-in">The geography of our Linkbuilding services</h2>
+					<h2 class="fade-in">География наших услуг по Аутрич ссылкам</h2>
 					<div class="countries-list">
 						<div class="country fade-in">
 							<img
 								src="<?php bloginfo('template_url');?>/assets/images/countries/UK.png"
 								alt="United Kingdom"
 							/>
-							<span>United Kingdom</span>
+							<span>Великобритания</span>
 						</div>
 						<div class="country fade-in">
 							<img
 								src="<?php bloginfo('template_url');?>/assets/images/countries/US.png"
 								alt="United States"
 							/>
-							<span>USA</span>
+							<span>США</span>
 						</div>
 						<div class="country fade-in">
 							<img src="<?php bloginfo('template_url');?>/assets/images/countries/FR.png" alt="France" />
-							<span>France</span>
+							<span>Франция</span>
 						</div>
 						<div class="country fade-in">
 							<img src="<?php bloginfo('template_url');?>/assets/images/countries/ES.png" alt="Spain" />
-							<span>Spain</span>
+							<span>Испания</span>
 						</div>
 						<div class="country fade-in">
 							<img src="<?php bloginfo('template_url');?>/assets/images/countries/DE.png" alt="Germany" />
-							<span>Germany</span>
+							<span>Германия</span>
 						</div>
 						<div class="country fade-in">
 							<img src="<?php bloginfo('template_url');?>/assets/images/countries/PL.png" alt="Poland" />
-							<span>Poland</span>
+							<span>Польша</span>
 						</div>
 						<div class="country fade-in">
 							<img src="<?php bloginfo('template_url');?>/assets/images/countries/UA.png" alt="Ukraine" />
-							<span>Ukraine</span>
+							<span>Украина</span>
 						</div>
 						<div class="country fade-in">
 							<img
 								src="<?php bloginfo('template_url');?>/assets/images/countries/KZ.png"
 								alt="Kazakhstan"
 							/>
-							<span>Kazakhstan</span>
+							<span>Казахстан</span>
 						</div>
 						<div class="country fade-in">
 							<img src="<?php bloginfo('template_url');?>/assets/images/countries/MX.png" alt="Mexico" />
-							<span>Mexico</span>
+							<span>Мексика</span>
 						</div>
 						<div class="country fade-in">
 							<img src="<?php bloginfo('template_url');?>/assets/images/countries/AR.png" alt="Argentina" />
-							<span>Argentina</span>
+							<span>Аргентина</span>
 						</div>
 						<div class="country fade-in">
 							<img src="<?php bloginfo('template_url');?>/assets/images/countries/CL.png" alt="Chile" />
-							<span>Chile</span>
+							<span>Чили</span>
 						</div>
 					</div>
 					<img
@@ -221,11 +221,11 @@
 				<div class="container">
 					<div class="impact-content">
 						<div class="impact-text fade-in fade-in-left">
-							<h2 class="blue"><?php the_field('EN-linkbuilding-impact-h1'); ?></h2>
-							<p><?php the_field('EN-linkbuilding-impact-text'); ?></p>
+							<h2 class="blue"><?php the_field('RU-outreach-impact-h1'); ?></h2>
+							<p><?php the_field('RU-outreach-impact-text'); ?></p>
 						</div>
 						<img
-							src="<?php the_field('EN-linkbuilding-impact-img'); ?>"
+							src="<?php the_field('RU-outreach-impact-img'); ?>"
 							class="impact-img fade-in fade-in-right"
 							alt="impact"
 						/>
@@ -234,19 +234,19 @@
 			</section>
 			<section id="prices">
 				<div class="container">
-					<h2 class="fade-in"><?php the_field('EN-linkbuilding-prices-h1'); ?></h2>
+					<h2 class="fade-in"><?php the_field('RU-outreach-prices-h1'); ?></h2>
 					<div class="prices-list">
 						<div class="row">
 							<?php
-							$block = get_field('EN-linkbuilding-prices-item1');
+							$block = get_field('RU-outreach-prices-item1');
 							if( $block ): ?>
 								<div class="prices-item relative fade-in">
 									<div class="content">
 										<h3 class="blue"><?php echo $block['title']; ?></h3>
 										<div class="price-block">
 											<span class="main-price relative"><?php echo $block['full-price']; ?></span>
-											<span class="link-amount"><?php echo $block['link-amount']; ?> links</span>
-											<span class="single-price">(<b>$<?php echo $block['link-price']; ?></b> per link)</span>
+											<span class="link-amount"><?php echo $block['link-amount']; ?> ссылок</span>
+											<span class="single-price">(<b>$<?php echo $block['link-price']; ?></b> за ссылку)</span>
 										</div>
 										<div class="options-block">
 											<?php
@@ -281,7 +281,7 @@
 										data-open-modal
 										class="btn-secondary"
 									>
-										Order now
+										Заказать сейчас
 									</button>
 									<?php
 												$label = $block['label'];
@@ -291,15 +291,15 @@
 								</div>
 							<?php endif; ?>
 							<?php
-							$block = get_field('EN-linkbuilding-prices-item2');
+							$block = get_field('RU-outreach-prices-item2');
 							if( $block ): ?>
 								<div class="prices-item relative fade-in">
 									<div class="content">
 										<h3 class="blue"><?php echo $block['title']; ?></h3>
 										<div class="price-block">
 											<span class="main-price relative"><?php echo $block['full-price']; ?></span>
-											<span class="link-amount"><?php echo $block['link-amount']; ?> links</span>
-											<span class="single-price">(<b>$<?php echo $block['link-price']; ?></b> per link)</span>
+											<span class="link-amount"><?php echo $block['link-amount']; ?> ссылок</span>
+											<span class="single-price">(<b>$<?php echo $block['link-price']; ?></b> за ссылку)</span>
 										</div>
 										<div class="options-block">
 											<?php
@@ -344,7 +344,7 @@
 								data-open-modal
 								class="btn-secondary"
 							>
-								Order now
+								Заказать сейчас
 							</button>
 							<?php
 										$label = $block['label'];
@@ -356,15 +356,15 @@
 						</div>
 						<div class="row">
 							<?php
-							$block = get_field('EN-linkbuilding-prices-item3');
+							$block = get_field('RU-outreach-prices-item3');
 							if( $block ): ?>
 								<div class="prices-item relative fade-in">
 									<div class="content">
 										<h3 class="blue"><?php echo $block['title']; ?></h3>
 										<div class="price-block">
 											<span class="main-price relative"><?php echo $block['full-price']; ?></span>
-											<span class="link-amount"><?php echo $block['link-amount']; ?> links</span>
-											<span class="single-price">(<b>$<?php echo $block['link-price']; ?></b> per link)</span>
+											<span class="link-amount"><?php echo $block['link-amount']; ?> ссылок</span>
+											<span class="single-price">(<b>$<?php echo $block['link-price']; ?></b> за ссылку)</span>
 										</div>
 										<div class="options-block">
 											<?php
@@ -409,7 +409,7 @@
 								data-open-modal
 								class="btn-secondary"
 							>
-								Order now
+								Заказать сейчас
 							</button>
 							<?php
 										$label = $block['label'];
@@ -420,20 +420,20 @@
 						<?php endif; ?>
 							<div class="prices-item special fade-in">
 								<div class="content">
-									<h3 class="blue"><?php the_field('EN-linkbuilding-special-h1'); ?></h3>
-									<p class="subheading"><?php the_field('EN-linkbuilding-special-h2'); ?></p>
+									<h3 class="blue"><?php the_field('RU-outreach-special-h1'); ?></h3>
+									<p class="subheading"><?php the_field('RU-outreach-special-h2'); ?></p>
 									<img
 										src="<?php bloginfo('template_url');?>/assets/images/services/special-offer.svg"
 										alt=""
 									/>
-									<p class="caption"><?php the_field('EN-linkbuilding-special-h1'); ?></p>
+									<p class="caption"><?php the_field('RU-outreach-special-h1'); ?></p>
 								</div>
 								<button
 									data-selected-plan="special"
 									data-open-modal
 									class="btn-secondary"
 								>
-									Order now
+									Заказать сейчас
 								</button>
 							</div>
 						</div>
@@ -444,11 +444,11 @@
 				<div class="container">
 					<div class="feedback-content">
 						<div class="feedback-left fade-in fade-in-left">
-							<h2 class="blue"><?php the_field('EN-linkbuilding-feedback-h1'); ?></h2>
+							<h2 class="blue"><?php the_field('RU-outreach-feedback-h1'); ?></h2>
 							<form class="feedback-form" novalidate>
 								<div class="feedback-inputs">
 									<div class="input-container">
-										<p class="placeholder">Name*</p>
+										<p class="placeholder">Имя*</p>
 										<input
 											type="text"
 											name="name"
@@ -472,7 +472,7 @@
 										</svg>
 									</div>
 									<div class="input-container">
-										<p class="placeholder">Phone number*</p>
+										<p class="placeholder">Номер телефона*</p>
 										<input type="tel" name="phone" class="input" />
 										<svg
 											class="line-svg"
@@ -511,10 +511,10 @@
 									</div>
 								</div>
 								<p class="feedback-subtext">
-									By clicking the button, you agree to the processing of personal data
+									Нажимая кнопку, вы даете согласие на обработку персональных данных
 								</p>
 								<button class="feedback-submit btn-primary" type="submit">
-									Get a consultation
+									Получить консультацию
 								</button>
 							</form>
 						</div>
@@ -534,8 +534,8 @@
 						</button>
 						<div class="modal-left">
 							<div class="modal-left-text">
-								<h3 class="blue">Submit your request!</h3>
-								<span>We will contact you as soon as possible</span>
+								<h3 class="blue">Оставляйте заявку!</h3>
+								<span>Мы свяжемся с вами в кратчайшие сроки</span>
 							</div>
 							<img src="<?php bloginfo('template_url');?>/assets/images/modal-img.svg" alt="Contact us" />
 						</div>
@@ -543,7 +543,7 @@
 							<form id="modal-form" action="send_email.php" method="POST"">
 								<div class="modal-inputs">
 									<div class="input-container">
-										<p class="placeholder">Name*</p>
+										<p class="placeholder">Имя*</p>
 										<input
 											type="text"
 											name="name"
@@ -567,7 +567,7 @@
 										</svg>
 									</div>
 									<div class="comm-method">
-										<p class="placeholder">Contact method*</p>
+										<p class="placeholder">Способ связи*</p>
 										<div class="radio-group">
 											<div class="radio-button">
 												<input
@@ -576,7 +576,7 @@
 													id="phone"
 													value="phone"
 												/>
-												<label for="phone">Phone number</label>
+												<label for="phone">Номер телефона</label>
 											</div>
 											<div class="radio-button">
 												<input
@@ -617,7 +617,7 @@
 										</div>
 									</div>
 									<div id="dynamic-input" class="input-container">
-										<p class="placeholder">Phone number*</p>
+										<p class="placeholder">Номер телефона*</p>
 										<input type="tel" name="phone" class="input dynamic" />
 										<svg
 											class="line-svg"
@@ -636,7 +636,7 @@
 										</svg>
 									</div>
 									<div class="input-container">
-										<p class="placeholder">Message</p>
+										<p class="placeholder">Сообщение</p>
 										<input
 											type="text"
 											name="message"
@@ -662,15 +662,15 @@
 									</div>
 								</div>
 								<p class="modal-subtext">
-									By clicking the "Send" button, you agree to the processing of personal data
+									Нажимая кнопку “Отправить”, вы даете согласие на обработку персональных данных
 								</p>
 								<button class="modal-submit btn-primary" type="submit">
-									Send
+									Отправить
 								</button>
 							</form>
 						</div>
 						<div class="modal-submitted">
-							<h3 class="blue">Your request has been successfully sent!</h3>
+							<h3 class="blue">Ваш запрос успешно отправлен!</h3>
 							<img
 								src="<?php bloginfo('template_url');?>/assets/images/form-submitted.svg"
 								alt="form submitted"

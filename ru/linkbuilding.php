@@ -149,7 +149,7 @@
 			</section>
 			<section id="countries">
 				<div class="container relative">
-					<h2 class="fade-in">География наших услуг по Аутрич ссылкам</h2>
+					<h2 class="fade-in">География наших услуг по Линкбилдингу</h2>
 					<div class="countries-list">
 						<div class="country fade-in">
 							<img
