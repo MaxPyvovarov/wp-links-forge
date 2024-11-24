@@ -551,7 +551,7 @@
 							<div class="swiper-wrapper">
 								<?php
 										$review = get_field('UA-review1');
-										if( $review ): ?>
+										if( $review['name'] && $review['position'] && $review['text']  ): ?>
 										<div class="swiper-slide">
 											<div class="review">
 											<img
@@ -573,12 +573,12 @@
 											<p class="review-text">
 												<?php echo $review['text']; ?>
 											</p>
+										</div>
 									</div>
-										<?php endif; ?>
-								</div>
+								<?php endif; ?>
 								<?php
 										$review = get_field('UA-review2');
-										if( $review ): ?>
+										if( $review['name'] && $review['position'] && $review['text']  ): ?>
 										<div class="swiper-slide">
 											<div class="review">
 											<img
@@ -600,12 +600,12 @@
 											<p class="review-text">
 												<?php echo $review['text']; ?>
 											</p>
+										</div>
 									</div>
-										<?php endif; ?>
-								</div>
+								<?php endif; ?>
 								<?php
 										$review = get_field('UA-review3');
-										if( $review ): ?>
+										if( $review['name'] && $review['position'] && $review['text'] ): ?>
 										<div class="swiper-slide">
 											<div class="review">
 											<img
@@ -628,8 +628,143 @@
 												<?php echo $review['text']; ?>
 											</p>
 									</div>
-										<?php endif; ?>
 								</div>
+							<?php endif; ?>
+							<?php
+										$review = get_field('UA-review4');
+										if( $review['name'] && $review['position'] && $review['text']  ): ?>
+										<div class="swiper-slide">
+											<div class="review">
+											<img
+												src="<?php bloginfo('template_url');?>/assets/icons/quotes.svg"
+												alt="quote"
+												class="quote"
+											/>
+											<div class="reviewer-info">
+												<h5><?php echo $review['name']; ?></h5>
+												<span><?php echo $review['position']; ?></span>
+												<div class="review-mark">
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+												</div>
+											</div>
+											<p class="review-text">
+												<?php echo $review['text']; ?>
+											</p>
+										</div>
+									</div>
+								<?php endif; ?>
+								<?php
+										$review = get_field('UA-review5');
+										if( $review['name'] && $review['position'] && $review['text']  ): ?>
+										<div class="swiper-slide">
+											<div class="review">
+											<img
+												src="<?php bloginfo('template_url');?>/assets/icons/quotes.svg"
+												alt="quote"
+												class="quote"
+											/>
+											<div class="reviewer-info">
+												<h5><?php echo $review['name']; ?></h5>
+												<span><?php echo $review['position']; ?></span>
+												<div class="review-mark">
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+												</div>
+											</div>
+											<p class="review-text">
+												<?php echo $review['text']; ?>
+											</p>
+										</div>
+									</div>
+								<?php endif; ?>
+								<?php
+										$review = get_field('UA-review6');
+										if( $review['name'] && $review['position'] && $review['text']  ): ?>
+										<div class="swiper-slide">
+											<div class="review">
+											<img
+												src="<?php bloginfo('template_url');?>/assets/icons/quotes.svg"
+												alt="quote"
+												class="quote"
+											/>
+											<div class="reviewer-info">
+												<h5><?php echo $review['name']; ?></h5>
+												<span><?php echo $review['position']; ?></span>
+												<div class="review-mark">
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+												</div>
+											</div>
+											<p class="review-text">
+												<?php echo $review['text']; ?>
+											</p>
+										</div>
+									</div>
+								<?php endif; ?>
+								<?php
+										$review = get_field('UA-review7');
+										if( $review['name'] && $review['position'] && $review['text']  ): ?>
+										<div class="swiper-slide">
+											<div class="review">
+											<img
+												src="<?php bloginfo('template_url');?>/assets/icons/quotes.svg"
+												alt="quote"
+												class="quote"
+											/>
+											<div class="reviewer-info">
+												<h5><?php echo $review['name']; ?></h5>
+												<span><?php echo $review['position']; ?></span>
+												<div class="review-mark">
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+												</div>
+											</div>
+											<p class="review-text">
+												<?php echo $review['text']; ?>
+											</p>
+										</div>
+									</div>
+								<?php endif; ?>
+								<?php
+										$review = get_field('UA-review8');
+										if( $review['name'] && $review['position'] && $review['text']  ): ?>
+										<div class="swiper-slide">
+											<div class="review">
+											<img
+												src="<?php bloginfo('template_url');?>/assets/icons/quotes.svg"
+												alt="quote"
+												class="quote"
+											/>
+											<div class="reviewer-info">
+												<h5><?php echo $review['name']; ?></h5>
+												<span><?php echo $review['position']; ?></span>
+												<div class="review-mark">
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+													<img src="<?php bloginfo('template_url');?>/assets/icons/Star.svg" alt="star" />
+												</div>
+											</div>
+											<p class="review-text">
+												<?php echo $review['text']; ?>
+											</p>
+										</div>
+									</div>
+								<?php endif; ?>
 							</div>
 							<div class="swiper-pagination"></div>
 							<div class="swiper-button-prev"></div>
