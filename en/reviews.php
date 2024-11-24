@@ -149,7 +149,7 @@
 			</section>
 			<section id="countries">
 				<div class="container relative">
-					<h2 class="fade-in">The geography of our Review publications</h2>
+					<h2 class="fade-in"><?php the_field('EN-reviews-countries-h1'); ?></h2>
 					<div class="countries-list">
 						<div class="country fade-in">
 							<img
