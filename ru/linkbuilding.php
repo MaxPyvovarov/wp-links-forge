@@ -16,12 +16,12 @@
 					</div>
 					<img
 						class="hero-main-img linkbuilding fade-in"
-						src="<?php bloginfo('template_url');?>/assets/images/services/crowd/hero-main.svg"
+						src="<?php bloginfo('template_url');?>/assets/images/services/linkbuilding/hero-main.svg"
 						alt=""
 					/>
 					<img
 						class="hero-bg-img linkbuilding"
-						src="<?php bloginfo('template_url');?>/assets/images/services/crowd/hero-bg.svg"
+						src="<?php bloginfo('template_url');?>/assets/images/services/linkbuilding/hero-bg.svg"
 						alt=""
 					/>
 				</div>

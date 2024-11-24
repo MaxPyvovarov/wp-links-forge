@@ -1,6 +1,6 @@
 <?php
 /*
-	Template Name: RU outreach
+	Template Name: RU signals
 */
 ?>
 
@@ -10,18 +10,18 @@
 			<section id="hero">
 				<div class="container relative">
 					<div class="hero-content fade-in">
-						<h1><?php the_field('RU-outreach-hero-h1'); ?></h1>
-						<p><?php the_field('RU-outreach-hero-h2'); ?></p>
+						<h1><?php the_field('RU-signals-hero-h1'); ?></h1>
+						<p><?php the_field('RU-signals-hero-h2'); ?></p>
 						<a href="#prices" class="btn-primary">Заказать ссылки</a>
 					</div>
 					<img
-						class="hero-main-img outreach fade-in"
-						src="<?php bloginfo('template_url');?>/assets/images/services/outreach/hero-main.svg"
+						class="hero-main-img signals fade-in"
+						src="<?php bloginfo('template_url');?>/assets/images/services/signals/hero-main.svg"
 						alt=""
 					/>
 					<img
-						class="hero-bg-img outreach"
-						src="<?php bloginfo('template_url');?>/assets/images/services/outreach/hero-bg.svg"
+						class="hero-bg-img signals"
+						src="<?php bloginfo('template_url');?>/assets/images/services/signals/hero-bg.svg"
 						alt=""
 					/>
 				</div>
@@ -30,12 +30,12 @@
 				<div class="container">
 					<div class="advantages-content">
 						<div class="advantages-text fade-in fade-in-left">
-							<h2 class="blue"><?php the_field('RU-outreach-advantages-h1'); ?></h2>
-							<p><?php the_field('RU-outreach-advantages-h2'); ?></p>
+							<h2 class="blue"><?php the_field('RU-signals-advantages-h1'); ?></h2>
+							<p><?php the_field('RU-signals-advantages-h2'); ?></p>
 						</div>
 						<img
-							class="advantages-img outreach fade-in fade-in-right"
-							src="<?php the_field('RU-outreach-advantages-img'); ?>"
+							class="advantages-img signals fade-in fade-in-right"
+							src="<?php the_field('RU-signals-advantages-img'); ?>"
 							alt=""
 						/>
 					</div>
@@ -44,11 +44,11 @@
 			<section id="why-us">
 				<div class="container relative">
 					<h2 class="blue fade-in">
-						<?php the_field('RU-outreach-whyus-h1'); ?>
+						<?php the_field('RU-signals-whyus-h1'); ?>
 					</h2>
 					<div class="why-us-content">
 						<?php
-							$block = get_field('RU-outreach-whyus-block1');
+							$block = get_field('RU-signals-whyus-block1');
 							if( $block ): ?>
 							<div class="reason fade-in">
 								<div class="reason-heading">
@@ -65,7 +65,7 @@
 							</div>
 						<?php endif; ?>
 						<?php
-							$block = get_field('RU-outreach-whyus-block2');
+							$block = get_field('RU-signals-whyus-block2');
 							if( $block ): ?>
 							<div class="reason fade-in">
 								<div class="reason-heading">
@@ -82,7 +82,7 @@
 							</div>
 						<?php endif; ?>
 						<?php
-							$block = get_field('RU-outreach-whyus-block3');
+							$block = get_field('RU-signals-whyus-block3');
 							if( $block ): ?>
 							<div class="reason fade-in">
 								<div class="reason-heading">
@@ -99,7 +99,7 @@
 							</div>
 						<?php endif; ?>
 						<?php
-							$block = get_field('RU-outreach-whyus-block4');
+							$block = get_field('RU-signals-whyus-block4');
 							if( $block ): ?>
 							<div class="reason fade-in">
 								<div class="reason-heading">
@@ -116,7 +116,7 @@
 							</div>
 						<?php endif; ?>
 						<?php
-							$block = get_field('RU-outreach-whyus-block5');
+							$block = get_field('RU-signals-whyus-block5');
 							if( $block ): ?>
 							<div class="reason fade-in">
 								<div class="reason-heading">
@@ -149,7 +149,7 @@
 			</section>
 			<section id="countries">
 				<div class="container relative">
-					<h2 class="fade-in"><?php the_field('RU-outreach-countries-h1'); ?></h2>
+					<h2 class="fade-in"><?php the_field('RU-signals-countries-h1'); ?></h2>
 					<div class="countries-list">
 						<div class="country fade-in">
 							<img
@@ -221,11 +221,11 @@
 				<div class="container">
 					<div class="impact-content">
 						<div class="impact-text fade-in fade-in-left">
-							<h2 class="blue"><?php the_field('RU-outreach-impact-h1'); ?></h2>
-							<p><?php the_field('RU-outreach-impact-text'); ?></p>
+							<h2 class="blue"><?php the_field('RU-signals-impact-h1'); ?></h2>
+							<p><?php the_field('RU-signals-impact-text'); ?></p>
 						</div>
 						<img
-							src="<?php the_field('RU-outreach-impact-img'); ?>"
+							src="<?php the_field('RU-signals-impact-img'); ?>"
 							class="impact-img fade-in fade-in-right"
 							alt="impact"
 						/>
@@ -234,11 +234,11 @@
 			</section>
 			<section id="prices">
 				<div class="container">
-					<h2 class="fade-in"><?php the_field('RU-outreach-prices-h1'); ?></h2>
+					<h2 class="fade-in"><?php the_field('RU-signals-prices-h1'); ?></h2>
 					<div class="prices-list">
 						<div class="row">
 							<?php
-							$block = get_field('RU-outreach-prices-item1');
+							$block = get_field('RU-signals-prices-item1');
 							if( $block ): ?>
 								<div class="prices-item relative fade-in">
 									<div class="content">
@@ -291,7 +291,7 @@
 								</div>
 							<?php endif; ?>
 							<?php
-							$block = get_field('RU-outreach-prices-item2');
+							$block = get_field('RU-signals-prices-item2');
 							if( $block ): ?>
 								<div class="prices-item relative fade-in">
 									<div class="content">
@@ -356,7 +356,7 @@
 						</div>
 						<div class="row">
 							<?php
-							$block = get_field('RU-outreach-prices-item3');
+							$block = get_field('RU-signals-prices-item3');
 							if( $block ): ?>
 								<div class="prices-item relative fade-in">
 									<div class="content">
@@ -420,13 +420,13 @@
 						<?php endif; ?>
 							<div class="prices-item special fade-in">
 								<div class="content">
-									<h3 class="blue"><?php the_field('RU-outreach-special-h1'); ?></h3>
-									<p class="subheading"><?php the_field('RU-outreach-special-h2'); ?></p>
+									<h3 class="blue"><?php the_field('RU-signals-special-h1'); ?></h3>
+									<p class="subheading"><?php the_field('RU-signals-special-h2'); ?></p>
 									<img
 										src="<?php bloginfo('template_url');?>/assets/images/services/special-offer.svg"
 										alt=""
 									/>
-									<p class="caption"><?php the_field('RU-outreach-special-h1'); ?></p>
+									<p class="caption"><?php the_field('RU-signals-special-h1'); ?></p>
 								</div>
 								<button
 									data-selected-plan="special"
@@ -444,7 +444,7 @@
 				<div class="container">
 					<div class="feedback-content">
 						<div class="feedback-left fade-in fade-in-left">
-							<h2 class="blue"><?php the_field('RU-outreach-feedback-h1'); ?></h2>
+							<h2 class="blue"><?php the_field('RU-signals-feedback-h1'); ?></h2>
 							<form class="feedback-form" novalidate>
 								<div class="feedback-inputs">
 									<div class="input-container">

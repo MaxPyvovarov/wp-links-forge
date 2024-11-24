@@ -16,12 +16,12 @@
 					</div>
 					<img
 						class="hero-main-img outreach fade-in"
-						src="<?php bloginfo('template_url');?>/assets/images/services/crowd/hero-main.svg"
+						src="<?php bloginfo('template_url');?>/assets/images/services/outreach/hero-main.svg"
 						alt=""
 					/>
 					<img
 						class="hero-bg-img outreach"
-						src="<?php bloginfo('template_url');?>/assets/images/services/crowd/hero-bg.svg"
+						src="<?php bloginfo('template_url');?>/assets/images/services/outreach/hero-bg.svg"
 						alt=""
 					/>
 				</div>
