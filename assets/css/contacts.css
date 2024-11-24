@@ -63,6 +63,10 @@
 	padding: 60px 100px;
 }
 
+.contacts-left h2 {
+	text-align: left;
+}
+
 .contacts-form {
 	margin-top: 60px;
 	max-width: 300px;

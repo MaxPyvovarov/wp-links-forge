@@ -50,12 +50,18 @@ function resetInputs() {
 	let dynamicType = '';
 	let dynamicName = '';
 
+	const placeholders = {
+		RU: 'Номер телефона',
+		EN: 'Phone number',
+		UA: 'Номер телефону',
+	};
+
 	allInputs.forEach(input => {
 		if (input.name === selectedMethod) return;
 		else {
 			switch (selectedMethod) {
 				case 'phone':
-					dynamicPlaceholder = 'Номер телефона';
+					dynamicPlaceholder = placeholders[defaultLang] || placeholders['ua'];
 					dynamicName = 'phone';
 					dynamicType = 'tel';
 					break;

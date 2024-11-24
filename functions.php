@@ -110,4 +110,15 @@ function fix_svg_mime_type( $data, $file, $filename, $mimes, $real_mime = '' ){
 
 	return $data;
 }
+
+//404 redirect
+
+function redirect_404() {
+	if (is_404()) {
+		wp_redirect(home_url('/404', 301));
+		exit;
+	}
+}
+add_action('template_redirect', 'redirect_404')
+
 ?>

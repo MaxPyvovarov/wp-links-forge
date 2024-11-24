@@ -46,7 +46,6 @@ window.addEventListener('DOMContentLoaded', () => {
 	//Other pages delay
 	addDelayToElements(document.querySelectorAll('#faq .fade-in'));
 	addDelayToElements(document.querySelectorAll('#contacts .fade-in'));
-	addDelayToElements(document.querySelectorAll('.not-found .fade-in'));
 
 	//Language picker
 
@@ -545,18 +544,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 		const pageName = lastPart.split('.')[0];
 		return pageName;
-	}
-
-	function getPageLanguage() {
-		const url = window.location.href;
-
-		const parsedUrl = new URL(url);
-
-		const pathSegments = parsedUrl.pathname.split('/');
-
-		const languageCode = pathSegments[1];
-
-		return languageCode;
 	}
 
 	//Footer date

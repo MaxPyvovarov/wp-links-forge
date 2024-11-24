@@ -2,7 +2,7 @@ const reasons = document.querySelectorAll('.reason');
 reasons.forEach(reason => {
 	reason.addEventListener('click', () => {
 		//Making only 1 active at the time
-		// reasons.forEach(b => (b === reason ? '' : b.classList.remove('active')));
+		// reasons.forEach(r => (r === reason ? '' : r.classList.remove('active')));
 		reason.classList.toggle('active');
 	});
 });
