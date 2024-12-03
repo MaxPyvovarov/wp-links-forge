@@ -786,6 +786,10 @@ body.backdrop-opened {
 	grid-row: 1/1;
 }
 
+.footer-logo a {
+	display: inline-block;
+}
+
 .footer-socials {
 	grid-column: 1/1;
 	grid-row: 2/2;

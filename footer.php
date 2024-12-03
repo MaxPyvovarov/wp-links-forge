@@ -71,9 +71,11 @@ $current_lang = in_array($uri_segments[0], ['ru', 'en', 'ua']) ? $uri_segments[0
 		<footer id="footer">
 			<div class="container relative">
 				<div class="footer-content">
-					<a href="#" class="footer-logo"
-						><img src="<?php bloginfo('template_url');?>/assets/icons/logo_white.svg" alt="logo" class="logo"
-					/></a>
+					<div class="footer-logo">
+						<a href="<?php echo home_url('/') . (($current_lang === 'ua') ? '' : $current_lang);?>">
+							<img src="<?php bloginfo('template_url');?>/assets/icons/logo_white.svg" alt="logo" class="logo"/>
+						</a>
+					</div>
 					<div class="footer-services">
 						<h4><?php echo $translations[$current_lang]['services']; ?></h4>
 						<div class="footer-services-list">
